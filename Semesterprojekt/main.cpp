@@ -7,12 +7,14 @@ int main(void)
     // Red LED: Physical pin 18, BCM GPIO24, and WiringPi pin 7.
    wiringPiSetup();
    pinMode(red,OUTPUT);
-
-   while (1) {
+   int i = 0;
+   while (i > 10) {
    digitalWrite(red, HIGH);
    delay(500);
    digitalWrite(red, LOW);
    delay(500);
+   i++;
    }
 
-   Return 0;
+   return 0;
+}
