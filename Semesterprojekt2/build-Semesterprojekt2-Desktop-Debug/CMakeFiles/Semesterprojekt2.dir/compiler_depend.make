@@ -185,8 +185,110 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/bits/istream.tcc \
-  /usr/local/include/wiringPi.h
+  /usr/local/include/wiringPi.h \
+  /usr/include/c++/12/csignal \
+  /usr/include/signal.h \
+  /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
+  /usr/include/aarch64-linux-gnu/bits/signum-arch.h \
+  /usr/include/aarch64-linux-gnu/bits/types/sig_atomic_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/siginfo_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h \
+  /usr/include/aarch64-linux-gnu/bits/siginfo-arch.h \
+  /usr/include/aarch64-linux-gnu/bits/siginfo-consts.h \
+  /usr/include/aarch64-linux-gnu/bits/siginfo-consts-arch.h \
+  /usr/include/aarch64-linux-gnu/bits/types/sigval_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/sigevent_t.h \
+  /usr/include/aarch64-linux-gnu/bits/sigevent-consts.h \
+  /usr/include/aarch64-linux-gnu/bits/sigaction.h \
+  /usr/include/aarch64-linux-gnu/bits/sigcontext.h \
+  /usr/include/aarch64-linux-gnu/asm/sigcontext.h \
+  /usr/include/linux/types.h \
+  /usr/include/aarch64-linux-gnu/asm/types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/aarch64-linux-gnu/asm/posix_types.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/aarch64-linux-gnu/asm/sve_context.h \
+  /usr/include/aarch64-linux-gnu/bits/types/stack_t.h \
+  /usr/include/aarch64-linux-gnu/sys/ucontext.h \
+  /usr/include/aarch64-linux-gnu/sys/procfs.h \
+  /usr/include/aarch64-linux-gnu/sys/time.h \
+  /usr/include/aarch64-linux-gnu/sys/user.h \
+  /usr/include/aarch64-linux-gnu/bits/procfs.h \
+  /usr/include/aarch64-linux-gnu/bits/procfs-id.h \
+  /usr/include/aarch64-linux-gnu/bits/procfs-prregset.h \
+  /usr/include/aarch64-linux-gnu/bits/procfs-extra.h \
+  /usr/include/aarch64-linux-gnu/bits/sigstack.h \
+  /usr/include/aarch64-linux-gnu/bits/sigstksz.h \
+  /usr/include/unistd.h \
+  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+  /usr/include/aarch64-linux-gnu/bits/environments.h \
+  /usr/include/aarch64-linux-gnu/bits/confname.h \
+  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/aarch64-linux-gnu/bits/ss_flags.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_sigstack.h \
+  /usr/include/aarch64-linux-gnu/bits/sigthread.h \
+  /usr/include/aarch64-linux-gnu/bits/signal_ext.h
 
+
+/usr/include/aarch64-linux-gnu/bits/signal_ext.h:
+
+/usr/include/aarch64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/aarch64-linux-gnu/bits/environments.h:
+
+/usr/include/unistd.h:
+
+/usr/include/aarch64-linux-gnu/bits/sigstack.h:
+
+/usr/include/aarch64-linux-gnu/bits/procfs.h:
+
+/usr/include/aarch64-linux-gnu/sys/procfs.h:
+
+/usr/include/aarch64-linux-gnu/sys/ucontext.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/aarch64-linux-gnu/asm/posix_types.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/aarch64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/aarch64-linux-gnu/asm/types.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/aarch64-linux-gnu/bits/sigcontext.h:
+
+/usr/include/aarch64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/aarch64-linux-gnu/bits/siginfo-consts.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/aarch64-linux-gnu/sys/user.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/siginfo_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/signum-generic.h:
+
+/usr/include/signal.h:
+
+/usr/include/c++/12/csignal:
 
 /usr/local/include/wiringPi.h:
 
@@ -210,6 +312,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/linux/errno.h:
 
+/usr/include/aarch64-linux-gnu/bits/siginfo-consts-arch.h:
+
 /usr/include/aarch64-linux-gnu/bits/errno.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdio_lim.h:
@@ -224,11 +328,17 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/c++/12/cstdio:
 
+/usr/include/aarch64-linux-gnu/bits/signum-arch.h:
+
 /usr/include/aarch64-linux-gnu/sys/select.h:
 
 /usr/include/aarch64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/aarch64-linux-gnu/bits/unistd_ext.h:
+
 /usr/include/aarch64-linux-gnu/bits/byteswap.h:
+
+/usr/include/aarch64-linux-gnu/bits/procfs-extra.h:
 
 /usr/include/endian.h:
 
@@ -254,6 +364,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/aarch64-linux-gnu/c++/12/bits/c++locale.h:
 
+/usr/include/aarch64-linux-gnu/bits/types/struct_sigstack.h:
+
 /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/c++/12/ostream:
@@ -269,6 +381,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 /usr/include/c++/12/bits/hash_bytes.h:
 
 /usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/aarch64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/c++/12/bits/alloc_traits.h:
 
@@ -340,6 +454,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/aarch64-linux-gnu/sys/cdefs.h:
 
+/usr/include/aarch64-linux-gnu/bits/types/sig_atomic_t.h:
+
 /usr/include/c++/12/type_traits:
 
 /usr/include/c++/12/system_error:
@@ -370,6 +486,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/features.h:
 
+/usr/include/asm-generic/types.h:
+
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/aarch64-linux-gnu/bits/wordsize.h:
@@ -380,15 +498,21 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/aarch64-linux-gnu/bits/wchar.h:
 
+/usr/include/aarch64-linux-gnu/asm/sve_context.h:
+
 /usr/include/c++/12/bits/streambuf_iterator.h:
 
 /usr/lib/llvm-14/lib/clang/14.0.6/include/stdarg.h:
+
+/usr/include/asm-generic/posix_types.h:
 
 /usr/include/stdc-predef.h:
 
 /usr/include/c++/12/bits/move.h:
 
 /usr/include/c++/12/iosfwd:
+
+/usr/include/asm-generic/int-ll64.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/timer_t.h:
 
@@ -418,6 +542,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/c++/12/bits/memoryfwd.h:
 
+/usr/include/aarch64-linux-gnu/bits/procfs-prregset.h:
+
 /usr/include/c++/12/bits/postypes.h:
 
 /usr/include/c++/12/bits/ios_base.h:
@@ -436,6 +562,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/c++/12/bits/cxxabi_init_exception.h:
 
+/usr/include/aarch64-linux-gnu/bits/confname.h:
+
 /usr/include/c++/12/clocale:
 
 /usr/include/c++/12/backward/binders.h:
@@ -443,6 +571,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 /usr/include/locale.h:
 
 /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/aarch64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/c++/12/istream:
 
@@ -453,6 +583,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 /usr/include/features-time64.h:
 
 /usr/include/c++/12/cctype:
+
+/usr/include/aarch64-linux-gnu/bits/types/sigevent_t.h:
 
 /usr/include/c++/12/bits/stl_algobase.h:
 
@@ -472,11 +604,15 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/aarch64-linux-gnu/bits/cpu-set.h:
 
+/usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
+
 /usr/include/c++/12/bits/exception_defines.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/aarch64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/c++/12/cerrno:
 
@@ -491,6 +627,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 /usr/lib/llvm-14/lib/clang/14.0.6/include/__stddef_max_align_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/sigval_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h:
 
@@ -516,6 +654,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/c++/12/bits/allocator.h:
 
+/usr/include/aarch64-linux-gnu/bits/sigthread.h:
+
 /usr/include/c++/12/bits/cpp_type_traits.h:
 
 /usr/include/c++/12/bits/ostream_insert.h:
@@ -526,6 +666,8 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/c++/12/bits/stl_iterator_base_types.h:
 
+/usr/include/aarch64-linux-gnu/asm/sigcontext.h:
+
 /usr/include/c++/12/bits/stl_iterator_base_funcs.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/time_t.h:
@@ -534,9 +676,13 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/c++/12/debug/debug.h:
 
+/usr/include/aarch64-linux-gnu/bits/sigaction.h:
+
 /usr/include/c++/12/bits/stl_iterator.h:
 
 /usr/include/c++/12/bits/utility.h:
+
+/usr/include/aarch64-linux-gnu/bits/siginfo-arch.h:
 
 /usr/include/c++/12/bits/stl_function.h:
 
@@ -544,7 +690,11 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semeste
 
 /usr/include/c++/12/ext/numeric_traits.h:
 
+/usr/include/aarch64-linux-gnu/bits/procfs-id.h:
+
 /usr/include/c++/12/bits/stl_pair.h:
+
+/usr/include/aarch64-linux-gnu/sys/time.h:
 
 /usr/include/c++/12/bits/predefined_ops.h:
 
