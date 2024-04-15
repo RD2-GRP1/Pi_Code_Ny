@@ -1,0 +1,1 @@
+/usr/bin/clang++-14 -g CMakeFiles/Semesterprojekt2.dir/main.cpp.o -o Semesterprojekt2  -lwiringPi 

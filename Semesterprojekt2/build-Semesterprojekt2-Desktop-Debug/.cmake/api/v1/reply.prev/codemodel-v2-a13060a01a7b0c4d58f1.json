@@ -1,0 +1,61 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-9ef2efc59a6401c9b556.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Semesterprojekt2",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Semesterprojekt2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Semesterprojekt2-Debug-f20802afb7ff4c713cdc.json",
+					"name" : "Semesterprojekt2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug",
+		"source" : "/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
