@@ -69,10 +69,24 @@ include CMakeFiles/Semesterprojekt2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Semesterprojekt2.dir/flags.make
 
+CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o: CMakeFiles/Semesterprojekt2.dir/flags.make
+CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o: Semesterprojekt2_autogen/mocs_compilation.cpp
+CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o: CMakeFiles/Semesterprojekt2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o"
+	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o -MF CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o -c /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/Semesterprojekt2_autogen/mocs_compilation.cpp
+
+CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.i"
+	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/Semesterprojekt2_autogen/mocs_compilation.cpp > CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.i
+
+CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.s"
+	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/Semesterprojekt2_autogen/mocs_compilation.cpp -o CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.s
+
 CMakeFiles/Semesterprojekt2.dir/main.cpp.o: CMakeFiles/Semesterprojekt2.dir/flags.make
 CMakeFiles/Semesterprojekt2.dir/main.cpp.o: /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/main.cpp
 CMakeFiles/Semesterprojekt2.dir/main.cpp.o: CMakeFiles/Semesterprojekt2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Semesterprojekt2.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Semesterprojekt2.dir/main.cpp.o"
 	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Semesterprojekt2.dir/main.cpp.o -MF CMakeFiles/Semesterprojekt2.dir/main.cpp.o.d -o CMakeFiles/Semesterprojekt2.dir/main.cpp.o -c /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/main.cpp
 
 CMakeFiles/Semesterprojekt2.dir/main.cpp.i: cmake_force
@@ -85,15 +99,24 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.s: cmake_force
 
 # Object files for target Semesterprojekt2
 Semesterprojekt2_OBJECTS = \
+"CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/Semesterprojekt2.dir/main.cpp.o"
 
 # External object files for target Semesterprojekt2
 Semesterprojekt2_EXTERNAL_OBJECTS =
 
+Semesterprojekt2: CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o
 Semesterprojekt2: CMakeFiles/Semesterprojekt2.dir/main.cpp.o
 Semesterprojekt2: CMakeFiles/Semesterprojekt2.dir/build.make
+Semesterprojekt2: /usr/lib/aarch64-linux-gnu/libQt5Quick.so.5.15.8
+Semesterprojekt2: /usr/lib/aarch64-linux-gnu/libQt5Sql.so.5.15.8
+Semesterprojekt2: /usr/lib/aarch64-linux-gnu/libQt5QmlModels.so.5.15.8
+Semesterprojekt2: /usr/lib/aarch64-linux-gnu/libQt5Qml.so.5.15.8
+Semesterprojekt2: /usr/lib/aarch64-linux-gnu/libQt5Network.so.5.15.8
+Semesterprojekt2: /usr/lib/aarch64-linux-gnu/libQt5Gui.so.5.15.8
+Semesterprojekt2: /usr/lib/aarch64-linux-gnu/libQt5Core.so.5.15.8
 Semesterprojekt2: CMakeFiles/Semesterprojekt2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Semesterprojekt2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Semesterprojekt2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Semesterprojekt2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

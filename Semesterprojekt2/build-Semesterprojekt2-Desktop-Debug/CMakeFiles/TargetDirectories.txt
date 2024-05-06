@@ -5,3 +5,4 @@
 /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/CMakeFiles/install.dir
 /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/CMakeFiles/install/local.dir
 /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/CMakeFiles/install/strip.dir
+/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/CMakeFiles/Semesterprojekt2_autogen.dir

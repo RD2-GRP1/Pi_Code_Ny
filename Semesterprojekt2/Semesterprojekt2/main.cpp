@@ -1,6 +1,11 @@
 #include <iostream>
 #include "wiringPi.h"
 #include <csignal>
+#include <QCoreApplication>
+#include <QtSql>
+#include <QSqlDatabase>
+#include <cstdlib>
+//#include <mariadb/concpp.hpp>
 
  bool RUNNING = 1;
 void myhandler(int s){
@@ -9,7 +14,53 @@ void myhandler(int s){
 
 int main()
 {
+    //database forbindelse
+    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("/home/pi/gripper.db");
+    db.open();
+    if (!db.open()){
+        qDebug() << "kan ikke forbinde til databasen" << db.lastError().text();
+        return -1;
+    }
 
+    QSqlQuery query;
+
+
+    /* lave tabel for at teste forbindelse til database
+    query.prepare("CREATE TABLE t1(q INTEGER, b INTEGER PRIMARY KEY)");
+    if(!query.exec()){ std::cout << "failed creating table: " << query.lastError().text().toStdString() << "\n";}
+    query.exec();
+
+
+    query.prepare("INSERT into t1(q,b) VALUES (1,1)");
+    if(!query.exec()){std::cout << "insert failed";}
+    query.exec();
+    */
+
+
+    query.prepare("SELECT * from t1;");
+    query.exec();
+    while (query.next()){
+        int vis = query.value(0).toInt();
+        int visNU = query.value(1).toInt();
+        qDebug() << "Der er forbindelse til database, her får du data fra t1:" << vis << visNU;
+    }
+
+
+
+
+    /*
+    //instiate driver
+    sql::Driver* driver = sql::mariadb::get_driver_instances();
+
+    //configure vonnection
+    sql::SQLString url("jdbc::mariadb://localhost:3306/todo");
+    sql::Properties properties({{"user","app_user"}, {"password","Password123!"}});
+
+    // Establish Connection
+    std::unique_ptr<sql::Connection> conn(driver->connect(url, properties));
+
+*/
     // controll a diode using buttons
     /*
     wiringPiSetupGpio();
@@ -40,19 +91,30 @@ int main()
     //std::signal(SIGINT, myhandler);
 
     wiringPiSetupGpio();
-    int in1 = 23;
-    int in2 = 24;
+    int out1 = 23;
+    int out2 = 24;
     int pwm = 12;
+    int opKnap = 5;
+    int clKnap = 6;
+    int inKnap = 13;
+
+    int state = 0;
 
 
     std::cout << "setting pins" << std::endl;
-    pinMode(in1, OUTPUT);
-    pinMode(in2, OUTPUT);
+    pinMode(out1, OUTPUT);
+    pinMode(out2, OUTPUT);
     pinMode(pwm, OUTPUT);
+    pinMode(opKnap, INPUT);
+    pinMode(clKnap, INPUT);
+    pinMode(inKnap, INPUT);
 
-    //digitalWrite(in1,LOW);
-    //digitalWrite(in2,LOW);
+    //digitalWrite(out1,LOW);
+    //digitalWrite(out2,LOW);
     digitalWrite(pwm,LOW);
+    digitalWrite(opKnap, LOW);
+    digitalWrite(clKnap, LOW);
+    digitalWrite(inKnap, LOW);
 
 
     pinMode (pwm, PWM_OUTPUT);
@@ -61,21 +123,32 @@ int main()
     pwmSetRange (200);
 
     delay (10);
-    digitalWrite(in1,LOW);
-    digitalWrite(in2,HIGH);
+    digitalWrite(out1,LOW);
+    digitalWrite(out2,HIGH);
 
 
 
     while(1){
-        pwmWrite (pwm, 100);
-        delay(10000);
-        break;
+        switch(state) {
+        case 0:
+            if(digitalRead(!opKnap))
+
+            break;
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        }
     }
 
-    digitalWrite(in1,LOW);
-    digitalWrite(in2,LOW);
+    digitalWrite(out1,LOW);
+    digitalWrite(out2,LOW);
     digitalWrite(pwm,LOW);
-
+    digitalWrite(opKnap, LOW);
+    digitalWrite(clKnap, LOW);
+    digitalWrite(inKnap, LOW);
 
 /*
         // LEDPIN is wiringPi Pin #1 or GPIO #18

@@ -174,6 +174,43 @@ Semesterprojekt2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/build
 .PHONY : Semesterprojekt2/fast
 
+#=============================================================================
+# Target rules for targets named Semesterprojekt2_autogen
+
+# Build rule for target.
+Semesterprojekt2_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Semesterprojekt2_autogen
+.PHONY : Semesterprojekt2_autogen
+
+# fast build rule for target.
+Semesterprojekt2_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2_autogen.dir/build.make CMakeFiles/Semesterprojekt2_autogen.dir/build
+.PHONY : Semesterprojekt2_autogen/fast
+
+Semesterprojekt2_autogen/mocs_compilation.o: Semesterprojekt2_autogen/mocs_compilation.cpp.o
+.PHONY : Semesterprojekt2_autogen/mocs_compilation.o
+
+# target to build an object file
+Semesterprojekt2_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o
+.PHONY : Semesterprojekt2_autogen/mocs_compilation.cpp.o
+
+Semesterprojekt2_autogen/mocs_compilation.i: Semesterprojekt2_autogen/mocs_compilation.cpp.i
+.PHONY : Semesterprojekt2_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+Semesterprojekt2_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.i
+.PHONY : Semesterprojekt2_autogen/mocs_compilation.cpp.i
+
+Semesterprojekt2_autogen/mocs_compilation.s: Semesterprojekt2_autogen/mocs_compilation.cpp.s
+.PHONY : Semesterprojekt2_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+Semesterprojekt2_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.s
+.PHONY : Semesterprojekt2_autogen/mocs_compilation.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -210,7 +247,11 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... Semesterprojekt2_autogen"
 	@echo "... Semesterprojekt2"
+	@echo "... Semesterprojekt2_autogen/mocs_compilation.o"
+	@echo "... Semesterprojekt2_autogen/mocs_compilation.i"
+	@echo "... Semesterprojekt2_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

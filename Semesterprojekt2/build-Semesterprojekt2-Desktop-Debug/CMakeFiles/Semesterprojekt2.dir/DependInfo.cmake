@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Desktop-Debug/Semesterprojekt2_autogen/mocs_compilation.cpp" "CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o.d"
   "/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/main.cpp" "CMakeFiles/Semesterprojekt2.dir/main.cpp.o" "gcc" "CMakeFiles/Semesterprojekt2.dir/main.cpp.o.d"
   )
 

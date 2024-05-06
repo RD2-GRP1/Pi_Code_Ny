@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-9ef2efc59a6401c9b556.json",
+					"jsonFile" : "directory-.-Debug-a503b48136e13a1cc8bc.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -16,7 +16,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -31,7 +32,8 @@
 					"name" : "Semesterprojekt2",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -40,8 +42,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Semesterprojekt2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Semesterprojekt2-Debug-f20802afb7ff4c713cdc.json",
+					"jsonFile" : "target-Semesterprojekt2-Debug-331fa976476634ae3f13.json",
 					"name" : "Semesterprojekt2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Semesterprojekt2_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Semesterprojekt2_autogen-Debug-f8dc4c215b24a1854830.json",
+					"name" : "Semesterprojekt2_autogen",
 					"projectIndex" : 0
 				}
 			]

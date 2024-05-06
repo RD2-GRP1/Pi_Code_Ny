@@ -1,4 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Semesterprojekt2_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/Semesterprojekt2_autogen.dir/ParseCache.txt"
+  "Semesterprojekt2_autogen"
+  "CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/Semesterprojekt2.dir/main.cpp.o"
   "CMakeFiles/Semesterprojekt2.dir/main.cpp.o.d"
   "Semesterprojekt2"
