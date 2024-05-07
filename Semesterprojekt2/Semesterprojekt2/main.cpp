@@ -89,7 +89,7 @@ int main()
     int pwm = 12;
     int opKnap = 5;
     int clKnap = 6;
-    int inKnap = 13;
+    //int inKnap = 13;
 
     int state = 0;
 
@@ -197,6 +197,9 @@ int main()
         digitalWrite (LEDPIN, LOW);
 
 */
+
+
+
     return 0;
 
 }
