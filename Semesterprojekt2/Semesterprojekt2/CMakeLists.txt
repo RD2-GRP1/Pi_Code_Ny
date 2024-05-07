@@ -13,7 +13,7 @@ find_package(Qt5 REQUIRED COMPONENTS Core Quick Sql)
 #    message(FATAL_ERROR "Qt5 not found!")
 #endif()
 
-add_executable(Semesterprojekt2 main.cpp)
+add_executable(Semesterprojekt2 main.cpp database.cpp database.h)
 
 link_directories("/usr/lib")
 

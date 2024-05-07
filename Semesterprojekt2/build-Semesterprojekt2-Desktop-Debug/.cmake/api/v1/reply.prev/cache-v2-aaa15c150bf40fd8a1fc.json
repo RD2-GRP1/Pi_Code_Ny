@@ -955,7 +955,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : ""
+			"value" : "/usr"
 		},
 		{
 			"name" : "CMAKE_PROJECT_DESCRIPTION",
@@ -1295,7 +1295,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : ""
+			"value" : "/usr/lib/qt5/bin/qmake"
 		},
 		{
 			"name" : "Qt5Core_DIR",

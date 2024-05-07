@@ -31,11 +31,15 @@ int main()
     if(!query.exec()){ std::cout << "failed creating table: " << query.lastError().text().toStdString() << "\n";}
     query.exec();
 
+    //Den tabel som vores program skal benytte
+    "CREATE TABLE gripperData(ID INTEGER PRIMARY KEY AUTOINCREMENT, knap1 INTEGER, knap2 INTEGER, tid INTEGER, succes INTEGER)"
+
 
     query.prepare("INSERT into t1(q,b) VALUES (1,1)");
     if(!query.exec()){std::cout << "insert failed";}
     query.exec();
     */
+
 
 
     query.prepare("SELECT * from t1;");
@@ -49,18 +53,7 @@ int main()
 
 
 
-    /*
-    //instiate driver
-    sql::Driver* driver = sql::mariadb::get_driver_instances();
 
-    //configure vonnection
-    sql::SQLString url("jdbc::mariadb://localhost:3306/todo");
-    sql::Properties properties({{"user","app_user"}, {"password","Password123!"}});
-
-    // Establish Connection
-    std::unique_ptr<sql::Connection> conn(driver->connect(url, properties));
-
-*/
     // controll a diode using buttons
     /*
     wiringPiSetupGpio();
