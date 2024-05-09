@@ -1,5 +1,6 @@
 #ifndef DATABASE_H
 #define DATABASE_H
+
 #include <iostream>
 #include "wiringPi.h"
 #include <csignal>
@@ -12,9 +13,9 @@ class database
 {
 public:
     database();
-    void updateKnap1(int opdaterK1);
-    void updateKnap2(int opdaterK2);
-    void updateSucces(int opdaterS);
+    void updateKnap1(bool opdaterK1);
+    void updateKnap2(bool opdaterK2);
+    void updateSucces(bool opdaterS);
 
 private:
     int mKnap1;
@@ -23,6 +24,7 @@ private:
     int mTid;
     int mID;
     QSqlQuery query;
+    QSqlDatabase db;
 };
 
 #endif // DATABASE_H

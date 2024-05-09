@@ -7,6 +7,7 @@
 #include <cstdlib>
 #include "motorkontrol.h"
 #include "database.h"
+#include <string>
 
 bool RUNNING = 1;
 
@@ -27,21 +28,62 @@ int main()
     */
 
 
-    wiringPiSetupGpio();
-
-   pinMode(0, INPUT);
+   database d;
+   //d.open();
+   //setup wiring pi
+   wiringPiSetupGpio();
+   // set knap pins
    pinMode(5, INPUT);
    pinMode(6, INPUT);
 
    while(1){
-   if(!digitalRead(0)){std::cout << "knap1 er tændt";}
+       std::cout << "hej \n";
+
+   if(!digitalRead(5)){
+       std::cout << "knap1 er tændt";
+       d.updateKnap1(1);
+     }
+
+   if(!digitalRead(6)){
+       std::cout << "knap2 er tændt";
+       d.updateKnap2(1);
+     }
+
+    delay(2000);
    }
 
 
+   /*
+   //set input og en
+   pinMode(23, OUTPUT);
+   pinMode(24, OUTPUT);
+   digitalWrite(23, HIGH);
+   digitalWrite(24, LOW);
+
+   pinMode(26, PWM_OUTPUT);
+
+   //set pwm
+   pwmSetMode(PWM_MODE_MS);
+   pwmSetClock(3840);
+   pwmSetRange(1000);
+
+   for(int i = 1024; i != 1; i/=2){
+       std::cout << i << std::endl;
+       pwmWrite(26, i);
+       delay(5000);
+   }
+   */
 
 
 
-    /*
+
+
+//"CREATE TABLE gripperData(ID INTEGER PRIMARY KEY AUTOINCREMENT, knap1 INTEGER, knap2 INTEGER, tid INTEGER, succes INTEGER)"
+  // query.prepare("INSERT into gripperData(knap1,knap2,tid,succes) VALUES (1,1,5,1)");
+   //if(!query.exec()){std::cout << "insert failed";}
+
+
+
     //database forbindelse
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("/home/pi/gripper.db");
@@ -52,6 +94,7 @@ int main()
     }
     QSqlQuery query;
 
+    /*
     query.prepare("SELECT * from t1;");
     query.exec();
     while (query.next()){
@@ -60,6 +103,13 @@ int main()
         qDebug() << "Der er forbindelse til database, her får du data fra t1:" << vis << visNU;
     }
     */
+
+
+
+
+   //"CREATE TABLE gripperData(ID INTEGER PRIMARY KEY AUTOINCREMENT, knap1 INTEGER, knap2 INTEGER, tid INTEGER, succes INTEGER)"
+  //    query.prepare("INSERT into gripperData(knap1,knap2,tid,succes) VALUES (1,1,5,1)");
+  //    if(!query.exec()){std::cout << "insert failed";}
 
 
     /* lave tabel for at teste forbindelse til database
@@ -100,7 +150,7 @@ int main()
 
 
     //std::signal(SIGINT, myhandler);
-    /*wiringPiSetupGpio();
+    /* wiringPiSetupGpio();
     int out1 = 23;
     int out2 = 24;
     int pwm = 12;
@@ -125,7 +175,7 @@ int main()
     digitalWrite(inKnap, LOW);
     */
 
-    /*
+    /*  PWM
     pinMode (pwm, PWM_OUTPUT);
     pwmSetMode(PWM_MODE_MS);
     pwmSetClock (3840);
@@ -136,29 +186,51 @@ int main()
     digitalWrite(out2,HIGH);
     */
 
-   int state = 0;
+   /* ------------------------------------------------------------ */
+
+
+
+   /*motorkontrol m;
+    int in = 0;
+    while(1){
+        std::cin >> in;
+        if(in != 0){
+            m.setSpeed(in);
+            delay(100);
+            m.closeGripper();
+            in = 0;
+        }
+
+    }*/
+
+
 
     /*
-    motorkontrol m;
-    m.setup();
-    m.setSpeed(300);
-    */
-
-   /*
     while(1){
         switch(state) {
         case 0:
+            std::cout << "Nu er vi i case 0" << std::endl;
             m.closeGripper();
+            if(m.getClose()){
+                state = 1;
+            }
             break;
         case 1:
+            std::cout << "Der er skiftet" << std::endl;
+            m.openGripper();
+            if(m.getOpen()){break;}
+
             break;
         case 2:
+
             break;
         case 3:
             break;
         }
+        delay(1000);
     }
     */
+
 
     /*
     digitalWrite(out1,LOW);

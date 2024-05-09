@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Semesterprojekt.dir/main.cpp.o -o Semesterprojekt 

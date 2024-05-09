@@ -9,20 +9,21 @@
 
 
 database::database(){
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("/home/pi/gripper.db");
-    db.open();
     if (!db.open()) {
         qDebug() << "kan ikke forbinde til databasen" << db.lastError().text();
     }
     std::cout << "der er oprettet fobindelse til database" << std::endl;
+
 }
 
 //Den tabel som vores program skal benytte
 //"CREATE TABLE gripperData(ID INTEGER PRIMARY KEY AUTOINCREMENT, knap1 INTEGER, knap2 INTEGER, tid INTEGER, succes INTEGER)"
 
 
-void database::updateKnap1(int opdaterK1){
+void database::updateKnap1(bool opdaterK1){
+    db.open();
     if(opdaterK1){
         query.prepare("UPDATE gripperData SET knap1 = 1 WHERE ID = :ID");
         query.bindValue(":ID", mID);
@@ -34,7 +35,8 @@ void database::updateKnap1(int opdaterK1){
     }
 }
 
-void database::updateKnap2(int opdaterK2){
+void database::updateKnap2(bool opdaterK2){
+    db.open();
     if(opdaterK2){
         query.prepare("UPDATE gripperData SET knap2 = 1 WHERE ID = :ID");
         query.bindValue(":ID", mID);
@@ -59,7 +61,8 @@ void database::updateKnap2(){
     }
 } */
 
-void database::updateSucces(int opdaterS){
+void database::updateSucces(bool opdaterS){
+    db.open();
     if(opdaterS){
         query.prepare("UPDATE gripperData SET succes = 1 WHERE ID = :ID");
         query.bindValue(":ID", mID);

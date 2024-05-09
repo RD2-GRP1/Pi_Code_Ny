@@ -18,6 +18,8 @@ public:
     void openGripper();
     void closeGripper();
     void setSpeed(int speed);
+    bool getClose();
+    bool getOpen(){return !digitalRead(5);}
     void setup();
 
 private:
@@ -28,7 +30,7 @@ private:
     const int mPwm = 12;
     const int mOpKnap = 5;
     const int mClKnap = 6;
-    const int mInKnap = 13;
+    //const int mInKnap = 13;
 };
 
 #endif // MOTORKONTROL_H

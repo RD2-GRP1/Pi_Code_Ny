@@ -1,5 +1,6 @@
-CMakeFiles/Semesterprojekt2.dir/main.cpp.o: \
-  /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/main.cpp \
+CMakeFiles/Semesterprojekt2.dir/motorkontrol.cpp.o: \
+  /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/motorkontrol.cpp \
+  /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/motorkontrol.h \
   /usr/bin/../lib/gcc/aarch64-linux-gnu/12/../../../../include/c++/12/iostream \
   /usr/bin/../lib/gcc/aarch64-linux-gnu/12/../../../../include/aarch64-linux-gnu/c++/12/bits/c++config.h \
   /usr/bin/../lib/gcc/aarch64-linux-gnu/12/../../../../include/aarch64-linux-gnu/c++/12/bits/os_defines.h \
@@ -542,6 +543,4 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: \
   /usr/include/aarch64-linux-gnu/qt5/QtSql/qsqltablemodel.h \
   /usr/include/aarch64-linux-gnu/qt5/QtSql/qsqlresult.h \
   /usr/include/aarch64-linux-gnu/qt5/QtSql/qtsqlversion.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtSql/QSqlDatabase \
-  /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/motorkontrol.h \
-  /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/database.h
+  /usr/include/aarch64-linux-gnu/qt5/QtSql/QSqlDatabase

@@ -1,0 +1,7 @@
+/home/pi/projects/Pi_Code_Ny/build/CMakeFiles/Semesterprojekt.dir
+/home/pi/projects/Pi_Code_Ny/build/CMakeFiles/edit_cache.dir
+/home/pi/projects/Pi_Code_Ny/build/CMakeFiles/rebuild_cache.dir
+/home/pi/projects/Pi_Code_Ny/build/CMakeFiles/list_install_components.dir
+/home/pi/projects/Pi_Code_Ny/build/CMakeFiles/install.dir
+/home/pi/projects/Pi_Code_Ny/build/CMakeFiles/install/local.dir
+/home/pi/projects/Pi_Code_Ny/build/CMakeFiles/install/strip.dir
