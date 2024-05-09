@@ -13,12 +13,12 @@ find_package(Qt5 REQUIRED COMPONENTS Core Quick Sql)
 #    message(FATAL_ERROR "Qt5 not found!")
 #endif()
 
-add_executable(Semesterprojekt2 main.cpp database.cpp database.h)
+add_executable(Semesterprojekt2 main.cpp database.cpp database.h motorkontrol.h motorkontrol.cpp)
 
 link_directories("/usr/lib")
 
 target_link_libraries(Semesterprojekt2 Qt5::Core Qt5::Quick Qt5::Sql wiringPi)
-#target_link_libraries(Semesterprojekt2 wiringPi)
+target_link_libraries(Semesterprojekt2 wiringPi)
 
 include(GNUInstallDirs)
 install(TARGETS Semesterprojekt2

@@ -101,6 +101,12 @@
 			"Mu",
 			"EWIEGA46WW/moc_database.cpp",
 			null
+		],
+		[
+			"/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/motorkontrol.h",
+			"Mu",
+			"EWIEGA46WW/moc_motorkontrol.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -173,6 +179,11 @@
 		],
 		[
 			"/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/main.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/motorkontrol.cpp",
 			"Mu",
 			null
 		]

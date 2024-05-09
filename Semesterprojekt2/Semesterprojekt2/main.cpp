@@ -5,15 +5,43 @@
 #include <QtSql>
 #include <QSqlDatabase>
 #include <cstdlib>
-//#include <mariadb/concpp.hpp>
+#include "motorkontrol.h"
+#include "database.h"
 
- bool RUNNING = 1;
+bool RUNNING = 1;
+
 void myhandler(int s){
     RUNNING = false;
 }
 
 int main()
 {
+    /*
+    int opdaterK1;
+    int opdaterK2;
+    int opdaterSucces;
+    database d;
+    d.updateKnap1();
+    d.updateKnap2();
+    d.updateSucces();
+    */
+
+
+    wiringPiSetupGpio();
+
+   pinMode(0, INPUT);
+   pinMode(5, INPUT);
+   pinMode(6, INPUT);
+
+   while(1){
+   if(!digitalRead(0)){std::cout << "knap1 er tændt";}
+   }
+
+
+
+
+
+    /*
     //database forbindelse
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("/home/pi/gripper.db");
@@ -22,25 +50,7 @@ int main()
         qDebug() << "kan ikke forbinde til databasen" << db.lastError().text();
         return -1;
     }
-
     QSqlQuery query;
-
-
-    /* lave tabel for at teste forbindelse til database
-    query.prepare("CREATE TABLE t1(q INTEGER, b INTEGER PRIMARY KEY)");
-    if(!query.exec()){ std::cout << "failed creating table: " << query.lastError().text().toStdString() << "\n";}
-    query.exec();
-
-    //Den tabel som vores program skal benytte
-    "CREATE TABLE gripperData(ID INTEGER PRIMARY KEY AUTOINCREMENT, knap1 INTEGER, knap2 INTEGER, tid INTEGER, succes INTEGER)"
-
-
-    query.prepare("INSERT into t1(q,b) VALUES (1,1)");
-    if(!query.exec()){std::cout << "insert failed";}
-    query.exec();
-    */
-
-
 
     query.prepare("SELECT * from t1;");
     query.exec();
@@ -49,13 +59,22 @@ int main()
         int visNU = query.value(1).toInt();
         qDebug() << "Der er forbindelse til database, her får du data fra t1:" << vis << visNU;
     }
+    */
 
 
+    /* lave tabel for at teste forbindelse til database
+    query.prepare("CREATE TABLE t1(q INTEGER, b INTEGER PRIMARY KEY)");
+    if(!query.exec()){ std::cout << "failed creating table: " << query.lastError().text().toStdString() << "\n";}
+    query.exec();
 
 
+    query.prepare("INSERT into t1(q,b) VALUES (1,1)");
+    if(!query.exec()){std::cout << "insert failed";}
+    query.exec();
+    */
 
-    // controll a diode using buttons
-    /*
+
+    /*  controll a diode using buttons
     wiringPiSetupGpio();
 
     int in1 = 23;
@@ -77,21 +96,17 @@ int main()
         } else {
             digitalWrite(out1,LOW);
         }
-*/
-
+      */
 
 
     //std::signal(SIGINT, myhandler);
-
-    wiringPiSetupGpio();
+    /*wiringPiSetupGpio();
     int out1 = 23;
     int out2 = 24;
     int pwm = 12;
     int opKnap = 5;
     int clKnap = 6;
-    //int inKnap = 13;
-
-    int state = 0;
+    int inKnap = 13;
 
 
     std::cout << "setting pins" << std::endl;
@@ -102,14 +117,15 @@ int main()
     pinMode(clKnap, INPUT);
     pinMode(inKnap, INPUT);
 
-    //digitalWrite(out1,LOW);
-    //digitalWrite(out2,LOW);
+    digitalWrite(out1,LOW);
+    digitalWrite(out2,LOW);
     digitalWrite(pwm,LOW);
     digitalWrite(opKnap, LOW);
     digitalWrite(clKnap, LOW);
     digitalWrite(inKnap, LOW);
+    */
 
-
+    /*
     pinMode (pwm, PWM_OUTPUT);
     pwmSetMode(PWM_MODE_MS);
     pwmSetClock (3840);
@@ -118,14 +134,21 @@ int main()
     delay (10);
     digitalWrite(out1,LOW);
     digitalWrite(out2,HIGH);
+    */
 
+   int state = 0;
 
+    /*
+    motorkontrol m;
+    m.setup();
+    m.setSpeed(300);
+    */
 
+   /*
     while(1){
         switch(state) {
         case 0:
-            if(digitalRead(!opKnap))
-
+            m.closeGripper();
             break;
         case 1:
             break;
@@ -135,15 +158,17 @@ int main()
             break;
         }
     }
+    */
 
+    /*
     digitalWrite(out1,LOW);
     digitalWrite(out2,LOW);
     digitalWrite(pwm,LOW);
     digitalWrite(opKnap, LOW);
     digitalWrite(clKnap, LOW);
     digitalWrite(inKnap, LOW);
-
-/*
+    */
+        /*
         // LEDPIN is wiringPi Pin #1 or GPIO #18
         // we choose this pin since it supports PWM as
         // PWM is not supported by any other GPIO pins.
@@ -195,11 +220,8 @@ int main()
         // possible short and equipment damage from energized pin.
         pinMode(LEDPIN, INPUT);
         digitalWrite (LEDPIN, LOW);
-
-*/
-
-
+         */
 
     return 0;
+ }
 
-}

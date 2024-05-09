@@ -259,6 +259,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+motorkontrol.o: motorkontrol.cpp.o
+.PHONY : motorkontrol.o
+
+# target to build an object file
+motorkontrol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/motorkontrol.cpp.o
+.PHONY : motorkontrol.cpp.o
+
+motorkontrol.i: motorkontrol.cpp.i
+.PHONY : motorkontrol.i
+
+# target to preprocess a source file
+motorkontrol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/motorkontrol.cpp.i
+.PHONY : motorkontrol.cpp.i
+
+motorkontrol.s: motorkontrol.cpp.s
+.PHONY : motorkontrol.s
+
+# target to generate assembly for a file
+motorkontrol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/motorkontrol.cpp.s
+.PHONY : motorkontrol.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +306,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... motorkontrol.o"
+	@echo "... motorkontrol.i"
+	@echo "... motorkontrol.s"
 .PHONY : help
 
 

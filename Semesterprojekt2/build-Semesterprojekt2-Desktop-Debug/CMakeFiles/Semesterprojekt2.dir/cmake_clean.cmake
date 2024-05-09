@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Semesterprojekt2.dir/database.cpp.o.d"
   "CMakeFiles/Semesterprojekt2.dir/main.cpp.o"
   "CMakeFiles/Semesterprojekt2.dir/main.cpp.o.d"
+  "CMakeFiles/Semesterprojekt2.dir/motorkontrol.cpp.o"
+  "CMakeFiles/Semesterprojekt2.dir/motorkontrol.cpp.o.d"
   "Semesterprojekt2"
   "Semesterprojekt2.pdb"
 )
