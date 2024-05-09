@@ -542,6 +542,4 @@ CMakeFiles/Semesterprojekt2.dir/main.cpp.o: \
   /usr/include/aarch64-linux-gnu/qt5/QtSql/qsqltablemodel.h \
   /usr/include/aarch64-linux-gnu/qt5/QtSql/qsqlresult.h \
   /usr/include/aarch64-linux-gnu/qt5/QtSql/qtsqlversion.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtSql/QSqlDatabase \
-  /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/motorkontrol.h \
-  /home/pi/projects/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/database.h
+  /usr/include/aarch64-linux-gnu/qt5/QtSql/QSqlDatabase
