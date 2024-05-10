@@ -7,45 +7,64 @@
 #include <QSqlDatabase>
 #include <cstdlib>
 
-
 database::database(){
     db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("/home/pi/gripper.db");
     if (!db.open()) {
         qDebug() << "kan ikke forbinde til databasen" << db.lastError().text();
-    }
-    std::cout << "der er oprettet fobindelse til database" << std::endl;
-
+    } else {std::cout << "der er oprettet fobindelse til database" << std::endl;}
 }
 
 //Den tabel som vores program skal benytte
-//"CREATE TABLE gripperData(ID INTEGER PRIMARY KEY AUTOINCREMENT, knap1 INTEGER, knap2 INTEGER, tid INTEGER, succes INTEGER)"
+//"gripperData(ID INTEGER PRIMARY KEY AUTOINCREMENT, knap1 INTEGER, knap2 INTEGER, tid INTEGER, succes INTEGER)"
+// query.prepare("INSERT into gripperData(knap1,knap2,tid,succes) VALUES (1,1,5,1)");
 
 
-void database::updateKnap1(bool opdaterK1){
-    db.open();
+int database::getMaxID(){
+    QSqlQuery query;
+    query.prepare("SELECT MAX(ID) FROM gripperData;");
+    if(query.next()){
+        mID = query.value(0).toInt();
+    }
+    return mID;
+}
+
+void database::insertKnap1(bool opdaterK1){
+QSqlQuery query;
     if(opdaterK1){
-        query.prepare("UPDATE gripperData SET knap1 = 1 WHERE ID = :ID");
+        query.prepare("INSERT into gripperData(knap1) VALUES (1) WHERE ID = :ID");
+        mID = getMaxID();
         query.bindValue(":ID", mID);
         if(!query.exec()){std::cout << "failed to update mKnap1";}
+        mKnap1 = 1;
     } else{
-        query.prepare("UPDATE gripperData SET knap1 = 0 WHERE ID = :ID");
+        query.prepare("INSERT into gripperData(knap1) VALUES (0) WHERE ID = :ID");
+        mID = getMaxID();
         query.bindValue(":ID", mID);
         if(!query.exec()){std::cout << "failed to update mKnap1";}
+        mKnap1 = 0;
     }
 }
 
-void database::updateKnap2(bool opdaterK2){
-    db.open();
+void database::insertKnap2(bool opdaterK2){
+    QSqlQuery query;
     if(opdaterK2){
-        query.prepare("UPDATE gripperData SET knap2 = 1 WHERE ID = :ID");
-        query.bindValue(":ID", mID);
-        if(!query.exec()){std::cout << "failed to update knap2";}
+        query.prepare("INSERT into gripperData(knap2) VALUES (1)");
+        if(!query.exec()){std::cout << "failed to update mKnap1";}
+        mKnap2 = 1;
     } else{
-        query.prepare("UPDATE gripperData SET knap2 = 0 WHERE ID = :ID");
-        query.bindValue(":ID", mID);
-        if(!query.exec()){std::cout << "failed to update knap2";}
+        query.prepare("INSERT into gripperData(knap2) VALUES (0)");
+        if(!query.exec()){std::cout << "failed to update mKnap1";}
+        mKnap2 = 0;
     }
+
+    if (mKnap2 && mKnap1){
+        query.prepare("INSERT into gripperData(succes) VALUES (1)");
+        if(!query.exec()){std::cout << "failed to update succes";}
+    } else {
+        query.prepare("INSERT into gripperData(succes) VALUES (0)");
+        if(!query.exec()){std::cout << "failed to update succes";}
+     }
 }
 
 /* (uden parameter eksempel
@@ -61,18 +80,18 @@ void database::updateKnap2(){
     }
 } */
 
-void database::updateSucces(bool opdaterS){
-    db.open();
+
+/*
+void database::insertSucces(bool opdaterS){
+    QSqlQuery query;
     if(opdaterS){
-        query.prepare("UPDATE gripperData SET succes = 1 WHERE ID = :ID");
-        query.bindValue(":ID", mID);
+        query.prepare("INSERT into gripperData(succes) VALUES (1)");
         if(!query.exec()){std::cout << "failed to update succes";}
     } else{
-        query.prepare("UPDATE gripperData SET succes = 0 WHERE ID = :ID");
-        query.bindValue(":ID", mID);
+        query.prepare("INSERT into gripperData(succes) VALUES (0)");
         if(!query.exec()){std::cout << "failed to update succes";}
     }
-}
+} */
 
 /* Not finished
 updateTime(){

@@ -13,9 +13,10 @@ class database
 {
 public:
     database();
-    void updateKnap1(bool opdaterK1);
-    void updateKnap2(bool opdaterK2);
-    void updateSucces(bool opdaterS);
+    void insertKnap1(bool opdaterK1);
+    void insertKnap2(bool opdaterK2);
+    int getMaxID();
+    //void insertSucces(bool opdaterS);
 
 private:
     int mKnap1;
@@ -23,7 +24,6 @@ private:
     int mSucces;
     int mTid;
     int mID;
-    QSqlQuery query;
     QSqlDatabase db;
 };
 

@@ -17,6 +17,15 @@ void myhandler(int s){
 
 int main()
 {
+    database d;
+    bool opdater;
+    std::cout << "vælg true or false: \n ";
+    std::cin >> opdater;
+    std::cout << " du valgte " << opdater << std::endl;
+    //d.insertKnap1(opdater);
+    //d.insertKnap2(opdater);
+    d.insertKnap1(opdater);
+
     /*
     int opdaterK1;
     int opdaterK2;
@@ -27,9 +36,36 @@ int main()
     d.updateSucces();
     */
 
+    /*
+    wiringPiSetupGpio();
+    //set input og en
+    pinMode(23, OUTPUT);
+    pinMode(24, OUTPUT);
+    digitalWrite(23, HIGH);
+    digitalWrite(24, LOW);
 
+    pinMode(26, PWM_OUTPUT);
+
+    //set pwm
+    pwmSetMode(PWM_MODE_MS);
+    pwmSetClock(3840);
+    pwmSetRange(1000);
+
+
+
+
+    for(int i = 1024; i != 1; i/=2){
+        std::cout << i << std::endl;
+        pwmWrite(26, i);
+        delay(5000);
+    }
+    */
+
+
+
+
+    /*
    database d;
-   //d.open();
    //setup wiring pi
    wiringPiSetupGpio();
    // set knap pins
@@ -51,9 +87,11 @@ int main()
 
     delay(2000);
    }
+   */
 
 
-   /*
+
+    /*
    //set input og en
    pinMode(23, OUTPUT);
    pinMode(24, OUTPUT);
@@ -66,6 +104,8 @@ int main()
    pwmSetMode(PWM_MODE_MS);
    pwmSetClock(3840);
    pwmSetRange(1000);
+
+
 
    for(int i = 1024; i != 1; i/=2){
        std::cout << i << std::endl;
@@ -84,6 +124,7 @@ int main()
 
 
 
+    /*
     //database forbindelse
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("/home/pi/gripper.db");
@@ -93,6 +134,8 @@ int main()
         return -1;
     }
     QSqlQuery query;
+    */
+
 
     /*
     query.prepare("SELECT * from t1;");
@@ -190,9 +233,11 @@ int main()
 
 
 
-   /*motorkontrol m;
+    /*
+   motorkontrol m;
     int in = 0;
     while(1){
+        std::cout << "Sæt en speed mellem 0-1024: ";
         std::cin >> in;
         if(in != 0){
             m.setSpeed(in);
@@ -201,7 +246,7 @@ int main()
             in = 0;
         }
 
-    }*/
+    } */
 
 
 
