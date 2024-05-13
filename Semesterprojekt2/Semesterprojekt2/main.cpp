@@ -18,13 +18,34 @@ void myhandler(int s){
 int main()
 {
     database d;
+
+    //d.setKnap1(digitalRead(5));
+    bool opdater;
+    std::cout << "værdi for knap1: " << std::endl;
+    std::cin >> opdater;
+    d.setKnap1(opdater);
+
+    std::cout << "Vælg værdi for knap2: " << std::endl;
+    std::cin >> opdater;
+    d.setKnap2(opdater);
+
+    motorkontrol m;
+
+    m.closeGripper();
+
+    d.setTime(m.getTid());
+
+    d.insertRow();
+
+
+    /*
     bool opdater;
     std::cout << "vælg true or false: \n ";
     std::cin >> opdater;
-    std::cout << " du valgte " << opdater << std::endl;
+    std::cout << " du valgte " << opdater << std::endl; */
     //d.insertKnap1(opdater);
     //d.insertKnap2(opdater);
-    d.insertKnap1(opdater);
+    //d.insertKnap1(opdater);
 
     /*
     int opdaterK1;
@@ -36,6 +57,8 @@ int main()
     d.updateSucces();
     */
 
+
+
     /*
     wiringPiSetupGpio();
     //set input og en
@@ -44,16 +67,19 @@ int main()
     digitalWrite(23, HIGH);
     digitalWrite(24, LOW);
 
-    pinMode(26, PWM_OUTPUT);
+    pinMode(12, PWM_OUTPUT);
 
     //set pwm
     pwmSetMode(PWM_MODE_MS);
     pwmSetClock(3840);
     pwmSetRange(1000);
+    pwmWrite(12, 0);
+
+    */
 
 
 
-
+    /*
     for(int i = 1024; i != 1; i/=2){
         std::cout << i << std::endl;
         pwmWrite(26, i);

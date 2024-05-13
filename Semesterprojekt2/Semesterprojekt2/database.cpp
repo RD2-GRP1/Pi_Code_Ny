@@ -6,16 +6,17 @@
 #include <QtSql>
 #include <QSqlDatabase>
 #include <cstdlib>
+#include <chrono>
 
 database::database(){
     db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("/home/pi/gripper.db");
     if (!db.open()) {
         qDebug() << "kan ikke forbinde til databasen" << db.lastError().text();
-    } else {std::cout << "der er oprettet fobindelse til database" << std::endl;}
+    } else {std::cout << "der er oprettet forbindelse til database" << std::endl;}
 }
 
-//Den tabel som vores program skal benytte
+//Den tabel som vores program benytter
 //"gripperData(ID INTEGER PRIMARY KEY AUTOINCREMENT, knap1 INTEGER, knap2 INTEGER, tid INTEGER, succes INTEGER)"
 // query.prepare("INSERT into gripperData(knap1,knap2,tid,succes) VALUES (1,1,5,1)");
 
@@ -29,43 +30,50 @@ int database::getMaxID(){
     return mID;
 }
 
-void database::insertKnap1(bool opdaterK1){
+void database::insertRow(){
+    QSqlQuery query;
+    query.prepare("INSERT into gripperData(knap1, knap2, tid, succes) VALUES (:knap1, :knap2, :tid, :succes)");
+
+    query.bindValue(":ID", 0);
+    query.bindValue(":knap1", mKnap1);
+    query.bindValue(":knap2", mKnap2);
+    query.bindValue(":tid", mTid);
+    query.bindValue(":succes", mSucces);
+
+    if(!query.exec()){std::cout << "failed to insert row";}
+}
+
+void database::setKnap1(bool opdaterK1){
 QSqlQuery query;
     if(opdaterK1){
-        query.prepare("INSERT into gripperData(knap1) VALUES (1) WHERE ID = :ID");
-        mID = getMaxID();
-        query.bindValue(":ID", mID);
-        if(!query.exec()){std::cout << "failed to update mKnap1";}
         mKnap1 = 1;
     } else{
-        query.prepare("INSERT into gripperData(knap1) VALUES (0) WHERE ID = :ID");
-        mID = getMaxID();
-        query.bindValue(":ID", mID);
-        if(!query.exec()){std::cout << "failed to update mKnap1";}
         mKnap1 = 0;
     }
 }
 
-void database::insertKnap2(bool opdaterK2){
+void database::setKnap2(bool opdaterK2){
     QSqlQuery query;
-    if(opdaterK2){
-        query.prepare("INSERT into gripperData(knap2) VALUES (1)");
-        if(!query.exec()){std::cout << "failed to update mKnap1";}
+    if(opdaterK2) {
         mKnap2 = 1;
     } else{
-        query.prepare("INSERT into gripperData(knap2) VALUES (0)");
-        if(!query.exec()){std::cout << "failed to update mKnap1";}
         mKnap2 = 0;
     }
 
+    //husk at kør setKnap1 først
     if (mKnap2 && mKnap1){
-        query.prepare("INSERT into gripperData(succes) VALUES (1)");
-        if(!query.exec()){std::cout << "failed to update succes";}
+        mSucces = 1;
     } else {
-        query.prepare("INSERT into gripperData(succes) VALUES (0)");
-        if(!query.exec()){std::cout << "failed to update succes";}
+        mSucces = 0;
      }
 }
+
+void database::setTime(int tid){
+    mTid = tid;
+}
+
+
+
 
 /* (uden parameter eksempel
 void database::updateKnap2(){

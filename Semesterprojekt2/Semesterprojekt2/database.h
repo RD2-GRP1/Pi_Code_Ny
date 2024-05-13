@@ -13,9 +13,11 @@ class database
 {
 public:
     database();
-    void insertKnap1(bool opdaterK1);
-    void insertKnap2(bool opdaterK2);
+    void setKnap1(bool opdaterK1);
+    void setKnap2(bool opdaterK2);
     int getMaxID();
+    void insertRow();
+    void setTime(int tid);
     //void insertSucces(bool opdaterS);
 
 private:

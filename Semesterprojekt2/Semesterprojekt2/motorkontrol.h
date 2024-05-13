@@ -8,6 +8,7 @@
 #include <QtSql>
 #include <QSqlDatabase>
 #include <cstdlib>
+#include <chrono>
 
 
 class motorkontrol
@@ -21,6 +22,7 @@ public:
     bool getClose();
     bool getOpen(){return !digitalRead(5);}
     void setup();
+    auto getTid(){return mTid;}
 
 private:
     int mSpeed;
@@ -31,6 +33,7 @@ private:
     const int mOpKnap = 5;
     const int mClKnap = 6;
     //const int mInKnap = 13;
+    int mTid;
 };
 
 #endif // MOTORKONTROL_H

@@ -1,6 +1,7 @@
 #include "motorkontrol.h"
 #include <iostream>
 
+
 motorkontrol::motorkontrol()
 {
     wiringPiSetupGpio();
@@ -27,6 +28,8 @@ void motorkontrol::openGripper() {
     digitalWrite(mOut1,HIGH);
     digitalWrite(mOut2,LOW);
 
+
+
     pinMode (mPwm, PWM_OUTPUT);
     pwmSetMode(PWM_MODE_MS);
     pwmSetClock (3840);
@@ -48,18 +51,35 @@ void motorkontrol::closeGripper() {
     digitalWrite(mOut1,LOW);
     digitalWrite(mOut2,HIGH);
 
+
+
     pinMode (mPwm, PWM_OUTPUT);
     pwmSetMode(PWM_MODE_MS);
     pwmSetClock (3840);
     pwmSetRange (2500);
     delay(1000);
-    std::cout << mSpeed << std::endl;
+    //std::cout << mSpeed << std::endl;
     delay(1000);
+    auto start = std::chrono::high_resolution_clock::now();
+    auto deadline = start + std::chrono::seconds(15);
     pwmWrite (mPwm, mSpeed);
+    int var = 0;
     while(1){
-        if(!digitalRead(mClKnap)){
+
+        std::cin >> var;
+
+
+        /*!digitalRead(mClKnap)*/
+        if(var){
+            delay(50);
             pwmWrite (mPwm, 0);
             digitalWrite(mOut2,LOW);
+            auto stop = std::chrono::high_resolution_clock::now();
+            if (deadline<=stop) {
+                mTid = std::chrono::duration_cast<std::chrono::milliseconds>(deadline-start).count();
+            } else {
+                mTid = std::chrono::duration_cast<std::chrono::milliseconds>(stop-start).count();
+            }
             return;
         }
         delay(50);
