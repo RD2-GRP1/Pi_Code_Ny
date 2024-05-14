@@ -17,6 +17,26 @@ void myhandler(int s){
 
 int main()
 {
+    /*  For at få Motoren til at køre */
+    wiringPiSetupGpio();
+    //set input og en
+    pinMode(23, INPUT); //OUTPUT
+    pinMode(24, INPUT); //OUTPUT
+    digitalWrite(23, HIGH);
+    digitalWrite(24, LOW);
+
+    pinMode(12, PWM_OUTPUT);
+
+    //set pwm
+    pwmSetMode(PWM_MODE_MS);
+    pwmSetClock(3840);
+    pwmSetRange(2500);
+    pwmWrite(12, 250);
+
+
+
+
+    /* Database kode
     database d;
 
     //d.setKnap1(digitalRead(5));
@@ -38,11 +58,12 @@ int main()
     d.insertRow();
 
 
-    /*
+
     bool opdater;
     std::cout << "vælg true or false: \n ";
     std::cin >> opdater;
-    std::cout << " du valgte " << opdater << std::endl; */
+    std::cout << " du valgte " << opdater << std::endl;
+    */
     //d.insertKnap1(opdater);
     //d.insertKnap2(opdater);
     //d.insertKnap1(opdater);
@@ -115,10 +136,10 @@ int main()
    }
    */
 
-
+    /* ------------------------------------------------------- */
 
     /*
-   //set input og en
+   //set input og en, kører motor
    pinMode(23, OUTPUT);
    pinMode(24, OUTPUT);
    digitalWrite(23, HIGH);
