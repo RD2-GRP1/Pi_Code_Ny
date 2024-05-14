@@ -17,11 +17,12 @@ void myhandler(int s){
 
 int main()
 {
+    motorkontrol m;
     /*  For at få Motoren til at køre */
     wiringPiSetupGpio();
     //set input og en
-    pinMode(23, INPUT); //OUTPUT
-    pinMode(24, INPUT); //OUTPUT
+    pinMode(23, OUTPUT); //OUTPUT
+    pinMode(24, OUTPUT); //OUTPUT
     digitalWrite(23, HIGH);
     digitalWrite(24, LOW);
 
@@ -32,6 +33,16 @@ int main()
     pwmSetClock(3840);
     pwmSetRange(2500);
     pwmWrite(12, 250);
+    int speed = 0;
+    while(1) {
+        speed+=100;
+        m.setSpeed(speed);
+        m.openGripper();
+        delay(50);
+        if (speed >= 3000) {
+            break;
+        }
+    }
 
 
 

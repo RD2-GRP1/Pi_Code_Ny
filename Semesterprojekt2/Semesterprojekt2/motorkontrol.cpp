@@ -33,11 +33,12 @@ void motorkontrol::openGripper() {
     pinMode (mPwm, PWM_OUTPUT);
     pwmSetMode(PWM_MODE_MS);
     pwmSetClock (3840);
-    pwmSetRange (1000);
+    pwmSetRange (2500);
     std::cout << mSpeed << std::endl;
     pwmWrite (mPwm, mSpeed);
     while(1){
-        if(!digitalRead(mOpKnap)){
+        delay(5000);
+        if(1){ //!digitalRead(mOpKnap)
             pwmWrite (mPwm, 0);
             digitalWrite(mOut1,LOW);
             return;
