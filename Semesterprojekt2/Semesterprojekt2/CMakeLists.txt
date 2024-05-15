@@ -1,19 +1,14 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(Semesterprojekt2 LANGUAGES CXX)
+project(URClient)
 
 set(CMAKE_AUTOMOC ON)
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
-find_package(Qt5 REQUIRED COMPONENTS Core Quick Sql)
-#find_package(QT${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
-#if(NOT Qt5_FOUND)
-#    message(FATAL_ERROR "Qt5 not found!")
-#endif()
+find_package(Qt5 COMPONENTS Widgets Network REQUIRED) # Tilføj "Network" her
 
-add_executable(Semesterprojekt2 main.cpp database.cpp database.h motorkontrol.h motorkontrol.cpp)
+add_executable(Semesterprojekt2 main.cpp database.cpp database.h motorkontrol.h motorkontrol.cpp UR.h UR.cpp)
 
 link_directories("/usr/lib")
 
@@ -24,3 +19,8 @@ include(GNUInstallDirs)
 install(TARGETS Semesterprojekt2
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+
+add_executable(URClient main.cpp)
+
+target_link_libraries(URClient Qt5::Widgets Qt5::Network) # Tilføj "Network" her
+
