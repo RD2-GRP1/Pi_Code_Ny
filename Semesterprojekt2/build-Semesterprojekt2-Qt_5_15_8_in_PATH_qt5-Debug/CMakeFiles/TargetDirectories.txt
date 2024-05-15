@@ -1,0 +1,8 @@
+/home/pi/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Qt_5_15_8_in_PATH_qt5-Debug/CMakeFiles/Semesterprojekt2.dir
+/home/pi/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Qt_5_15_8_in_PATH_qt5-Debug/CMakeFiles/edit_cache.dir
+/home/pi/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Qt_5_15_8_in_PATH_qt5-Debug/CMakeFiles/rebuild_cache.dir
+/home/pi/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Qt_5_15_8_in_PATH_qt5-Debug/CMakeFiles/list_install_components.dir
+/home/pi/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Qt_5_15_8_in_PATH_qt5-Debug/CMakeFiles/install.dir
+/home/pi/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Qt_5_15_8_in_PATH_qt5-Debug/CMakeFiles/install/local.dir
+/home/pi/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Qt_5_15_8_in_PATH_qt5-Debug/CMakeFiles/install/strip.dir
+/home/pi/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Qt_5_15_8_in_PATH_qt5-Debug/CMakeFiles/Semesterprojekt2_autogen.dir

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+//<<<<<<< HEAD
 #include <iostream>
 #include "wiringPi.h"
 #include <csignal>
@@ -19,6 +19,8 @@ void myhandler(int s){
 int main()
 {
     motorkontrol m;
+    std::cout << "hej" << std::endl;
+
     /*  For at få Motoren til at køre */
     wiringPiSetupGpio();
     //set input og en
@@ -401,7 +403,8 @@ int main()
     return 0;
  }
 
-=======
+//=======
+/*
 #include <QtWidgets>
 #include <QTcpSocket>
 
@@ -468,4 +471,5 @@ int main(int argc, char *argv[]) {
 }
 
 #include "main.moc"
->>>>>>> UR_connection
+//>>>>>>> UR_connection
+*/

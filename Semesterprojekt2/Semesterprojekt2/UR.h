@@ -8,6 +8,7 @@ class URClient : public QWidget {
     Q_OBJECT
 
 public:
+    URClient();
     URClient(QWidget *parent = nullptr) : QWidget(parent) {
         socket = new QTcpSocket(this);
         connect(socket, &QTcpSocket::connected, this, &URClient::connected);

@@ -1,6 +1,6 @@
 #include "UR.h"
 
-UR::UR()
+URClient::URClient()
 {
 
 }
