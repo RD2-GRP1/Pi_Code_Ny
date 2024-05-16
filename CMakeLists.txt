@@ -1,15 +1,13 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(Forbindelse_Til_UR LANGUAGES CXX)
+project(URClient)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
-# Så den kan finde network pakken, til at kunne socket
-find_package(Qt5 COMPONENTS Network REQUIRED)
+find_package(Qt5 COMPONENTS Widgets Network REQUIRED) # Tilføj "Network" her
 
-# Tilføj filer til qt
-add_executable(Forbindelse_Til_UR main.cpp)
+add_executable(URClient main.cpp)
 
-# linke den til libery
-target_link_libraries(Forbindelse_Til_UR Qt5::Network)
+target_link_libraries(URClient Qt5::Widgets Qt5::Network) # Tilføj "Network" her
