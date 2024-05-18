@@ -899,4 +899,89 @@ CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o:
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtcpsocket.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetwork-config.h \
- /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractsocket.h
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractsocket.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QApplication \
+ /home/pi/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Qt_5_15_8_in_PATH_qt5-Debug/Semesterprojekt2_autogen/EWIEGA46WW/moc_UR5.cpp \
+ /home/pi/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Qt_5_15_8_in_PATH_qt5-Debug/Semesterprojekt2_autogen/EWIEGA46WW/../../../Semesterprojekt2/UR5.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QtNetwork \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QtNetworkDepends \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractnetworkcache.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkrequest.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QUrl \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractsocket.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qauthenticator.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qdnslookup.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qdtls.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslsocket.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtcpsocket.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslerror.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslcertificate.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qssl.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QFlags \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qhostaddress.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qhostinfo.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qhostaddress.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qhstspolicy.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qhttp2configuration.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qhttpmultipart.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QIODevice \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QNetworkRequest \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkrequest.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qlocalserver.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qlocalsocket.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkaccessmanager.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QSslConfiguration \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslconfiguration.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QSslPreSharedKeyAuthenticator \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslpresharedkeyauthenticator.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkconfigmanager.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkconfiguration.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkconfiguration.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkcookie.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkcookiejar.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkdatagram.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkdiskcache.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractnetworkcache.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkinterface.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkproxy.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkreply.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QNetworkAccessManager \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworksession.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkinterface.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qocspresponse.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qpassworddigestor.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QCryptographicHash \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsctpserver.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtcpserver.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsctpsocket.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkdatagram.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qssl.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslcertificate.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslcertificateextension.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslcipher.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qssldiffiehellmanparameters.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslellipticcurve.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QHash \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslerror.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslkey.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslsocket.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtcpserver.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qudpsocket.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetworkversion.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QTcpServer \
+ /usr/include/c++/12/iostream /usr/include/c++/12/ostream \
+ /usr/include/c++/12/ios /usr/include/c++/12/bits/basic_ios.h \
+ /usr/include/c++/12/bits/locale_facets.h /usr/include/c++/12/cwctype \
+ /usr/include/wctype.h /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/aarch64-linux-gnu/c++/12/bits/ctype_base.h \
+ /usr/include/aarch64-linux-gnu/c++/12/bits/ctype_inline.h \
+ /usr/include/c++/12/bits/locale_facets.tcc \
+ /usr/include/c++/12/bits/basic_ios.tcc \
+ /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
+ /usr/include/c++/12/bits/istream.tcc /usr/local/include/wiringPi.h

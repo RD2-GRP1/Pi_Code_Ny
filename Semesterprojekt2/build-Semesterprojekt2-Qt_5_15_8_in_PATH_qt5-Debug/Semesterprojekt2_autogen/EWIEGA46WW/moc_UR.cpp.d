@@ -403,6 +403,7 @@
   /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtcpsocket.h \
   /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetwork-config.h \
   /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QApplication \
   /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QCommonStyle \
   /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QLayout \
   /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QScrollerProperties \

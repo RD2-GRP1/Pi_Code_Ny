@@ -3,23 +3,24 @@
 
 #include <QtWidgets>
 #include <QTcpSocket>
+#include <QApplication>
 
-class URClient : public QWidget {
+class UR : public QWidget {
     Q_OBJECT
 
 public:
-    URClient();
-    URClient(QWidget *parent = nullptr) : QWidget(parent) {
+    UR();
+    UR(QWidget *parent = nullptr) : QWidget(parent) {
         socket = new QTcpSocket(this);
-        connect(socket, &QTcpSocket::connected, this, &URClient::connected);
-        connect(socket, &QTcpSocket::disconnected, this, &URClient::disconnected);
-        connect(socket, &QTcpSocket::readyRead, this, &URClient::readyRead);
+        connect(socket, &QTcpSocket::connected, this, &UR::connected);
+        connect(socket, &QTcpSocket::disconnected, this, &UR::disconnected);
+        connect(socket, &QTcpSocket::readyRead, this, &UR::readyRead);
 
         connectBtn = new QPushButton("Connect", this);
-        connect(connectBtn, &QPushButton::clicked, this, &URClient::connectToServer);
+        connect(connectBtn, &QPushButton::clicked, this, &UR::connectToServer);
 
         moveBtn = new QPushButton("Move", this);
-        connect(moveBtn, &QPushButton::clicked, this, &URClient::moveUR);
+        connect(moveBtn, &QPushButton::clicked, this, &UR::moveUR);
 
         mainLayout = new QVBoxLayout(this);
         mainLayout->addWidget(connectBtn);
@@ -28,28 +29,17 @@ public:
         setLayout(mainLayout);
     }
 
-private slots:
-    void connectToServer() {
-        socket->connectToHost("192.168.1.54", 29999); // Change IP address and port as per your setup
-    }
+public slots:
 
-    void connected() {
-        qDebug() << "Connected to server";
-    }
+    void connectToServer();
 
-    void disconnected() {
-        qDebug() << "Disconnected from server";
-    }
+    void connected();
 
-    void readyRead() {
-        qDebug() << "Received data from server: " << socket->readAll();
-    }
+    void disconnected();
 
-    void moveUR() {
-        // Send movement command to the UR robot
-        QByteArray data = "movel(p[1.0, 2.0, 3.0, 0.0, 0.0, 0.0], a=1.2, v=0.1)\n";
-        socket->write(data);
-    }
+    void readyRead();
+
+    void moveUR();
 
 private:
     QTcpSocket *socket;

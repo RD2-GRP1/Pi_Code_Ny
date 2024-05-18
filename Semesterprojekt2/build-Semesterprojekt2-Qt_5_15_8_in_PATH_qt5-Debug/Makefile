@@ -235,6 +235,30 @@ UR.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/UR.cpp.s
 .PHONY : UR.cpp.s
 
+UR5.o: UR5.cpp.o
+.PHONY : UR5.o
+
+# target to build an object file
+UR5.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/UR5.cpp.o
+.PHONY : UR5.cpp.o
+
+UR5.i: UR5.cpp.i
+.PHONY : UR5.i
+
+# target to preprocess a source file
+UR5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/UR5.cpp.i
+.PHONY : UR5.cpp.i
+
+UR5.s: UR5.cpp.s
+.PHONY : UR5.s
+
+# target to generate assembly for a file
+UR5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/UR5.cpp.s
+.PHONY : UR5.cpp.s
+
 database.o: database.cpp.o
 .PHONY : database.o
 
@@ -327,6 +351,9 @@ help:
 	@echo "... UR.o"
 	@echo "... UR.i"
 	@echo "... UR.s"
+	@echo "... UR5.o"
+	@echo "... UR5.i"
+	@echo "... UR5.s"
 	@echo "... database.o"
 	@echo "... database.i"
 	@echo "... database.s"

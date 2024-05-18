@@ -1,4 +1,4 @@
-//<<<<<<< HEAD
+#include <thread>
 #include <iostream>
 #include "wiringPi.h"
 #include <csignal>
@@ -9,26 +9,123 @@
 #include "motorkontrol.h"
 #include "database.h"
 #include <string>
+#include "UR.h"
+#include <vector>
+#include "UR5.h"
 
-bool RUNNING = 1;
-
-void myhandler(int s){
-    RUNNING = false;
+void testThread(int argc, char *argv[]){
+    QCoreApplication a(argc, argv);
+    UR5 server;
+    a.exec();
 }
 
-int main()
+int main(int argc, char *argv[])
 {
-    motorkontrol m;
-    std::cout << "hej" << std::endl;
+    //UR5 server;
+   //server.newConnection();
+    int test = 0;
+    database d;
 
-    /*  For at få Motoren til at køre */
+    std::thread t = std::thread(testThread, std::ref(test), argv);
+    motorkontrol m;
     wiringPiSetupGpio();
     //set input og en
-    pinMode(23, OUTPUT); //OUTPUT
-    pinMode(24, OUTPUT); //OUTPUT
-    digitalWrite(23, HIGH);
-    digitalWrite(24, LOW);
+    m.setSpeed(1400);
+    int knap1 = 23; //Open knap
+    int knap2 = 24; //luk knap
+    pinMode(knap1, INPUT);
+    pinMode(knap2, INPUT);
 
+    delay(6000);
+    //Vi starter med at lukke griperen i programmet
+    m.closeGripper();
+    d.setKnap1(digitalRead(knap1));
+
+
+    while(1) {
+    std::cout << "Åben Knap: " << digitalRead(knap1) << std::endl;
+    std::cout << "Luk Knap: " << digitalRead(knap2) << std::endl;
+    std::cout << "thread: " << test << std::endl;
+
+        delay(200);
+
+        if(m.checkClKnap()) {
+            m.openGripper();
+            delay(2000);
+            d.setKnap2(digitalRead(knap2));
+
+
+            std::cout << "Der åbnes nu" << std::endl;
+        } else if(m.checkOpKnap()) {
+            m.closeGripper();
+            std::cout << "Der gribes nu" << std::endl;
+        }
+    }
+    t.~thread();
+    return 0;
+}
+
+
+
+
+/*
+    std::string ROBOT_IP = "192.168.1.54";
+
+
+    // Initialiser kontrol- og modtageobjekter
+    ur_rtde::RTDEControlInterface rtde_control(ROBOT_IP);
+    ur_rtde::RTDEReceiveInterface rtde_receive(ROBOT_IP);
+
+    // Flyt robotten til en specifik position (x, y, z, rx, ry, rz)
+    std::vector<double> target_pose = {0.5, 0.0, 0.5, 0.0, 3.14, 0.0};
+
+    // Juster positionen efter dine behov
+    rtde_control.moveL(target_pose);
+
+    // Hent nuværende position på robotten
+    std::vector<double> current_pose = rtde_receive.getActualTCPPose();
+    std::cout << "Current pose: ";
+    for (const auto& value : current_pose)
+        std::cout << value << " ";
+    std::cout << std::endl;
+
+    // Afslut
+    rtde_control.stopScript();
+
+
+
+
+    /*  For at få Motoren til at køre */
+/*
+    motorkontrol m;
+    wiringPiSetupGpio();
+    //set input og en
+    m.setSpeed(700);
+    int knap1 = 23;
+    int knap2 = 24;
+    pinMode(knap1, INPUT);
+    pinMode(knap2, INPUT);
+
+
+    while(1) {
+    std::cout << "Åben Knap: " << digitalRead(knap1) << std::endl;
+    std::cout << "Luk Knap: " << digitalRead(knap2) << std::endl;
+	delay(500);
+
+    int i=0;
+        ++i;
+        if(m.checkClKnap()) {
+            m.openGripper();
+        } else if(m.checkOpKnap()) {
+            m.closeGripper();
+        } else if(i>=40) {
+            break;
+        }
+        delay(50);
+    }
+*/
+
+/*
     pinMode(12, PWM_OUTPUT);
 
     //set pwm
@@ -47,7 +144,7 @@ int main()
         }
     }
 
-
+*/
 
 
     /* Database kode
@@ -185,17 +282,6 @@ int main()
 
 
 
-    /*
-    //database forbindelse
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("/home/pi/gripper.db");
-    db.open();
-    if (!db.open()){
-        qDebug() << "kan ikke forbinde til databasen" << db.lastError().text();
-        return -1;
-    }
-    QSqlQuery query;
-    */
 
 
     /*
@@ -216,41 +302,27 @@ int main()
   //    if(!query.exec()){std::cout << "insert failed";}
 
 
-    /* lave tabel for at teste forbindelse til database
-    query.prepare("CREATE TABLE t1(q INTEGER, b INTEGER PRIMARY KEY)");
-    if(!query.exec()){ std::cout << "failed creating table: " << query.lastError().text().toStdString() << "\n";}
-    query.exec();
+
+    /*
+
+     //  controll a diode using buttons
+    //wiringPiSetupGpio();
 
 
-    query.prepare("INSERT into t1(q,b) VALUES (1,1)");
-    if(!query.exec()){std::cout << "insert failed";}
-    query.exec();
-    */
-
-
-    /*  controll a diode using buttons
-    wiringPiSetupGpio();
-
-    int in1 = 23;
-    int in2 = 24;
-
-    int out1 = 16;
     int out2 = 20;
 
     if(wiringPiSetup() == -1){exit;}
     std::cout << "setting pins" << std::endl;
-    pinMode(in1, INPUT);
-    pinMode(in2, INPUT);
-    pinMode(out1, OUTPUT);
     pinMode(out2, OUTPUT);
 
-    while(1)
-        if(!(digitalRead(in1) || digitalRead(in2))) {
-            digitalWrite(out1,HIGH);
-        } else {
-            digitalWrite(out1,LOW);
-        }
-      */
+    while(1){
+        digitalWrite(out2, HIGH);
+        delay(500);
+        digitalWrite(out2, LOW);
+        delay(500);
+    }
+
+    */
 
 
     //std::signal(SIGINT, myhandler);
@@ -389,87 +461,10 @@ int main()
             delay(25);
             pwmWrite (LEDPIN, i);  // set the Duty Cycle for this range.
             // delay 10 seconds to watch the LED flash due to the PWM hardware.
-        }
+        }*/
 
 
-        // cleanup the environment. set each pin to low
-        // and set the mode to INPUT. These steps make sure
-        // the equipment is safe to manipulate and prevents
-        // possible short and equipment damage from energized pin.
-        pinMode(LEDPIN, INPUT);
-        digitalWrite (LEDPIN, LOW);
-         */
 
-    return 0;
- }
 
-//=======
-/*
-#include <QtWidgets>
-#include <QTcpSocket>
-
-class URClient : public QWidget {
-    Q_OBJECT
-
-public:
-    URClient(QWidget *parent = nullptr) : QWidget(parent) {
-        socket = new QTcpSocket(this);
-        connect(socket, &QTcpSocket::connected, this, &URClient::connected);
-        connect(socket, &QTcpSocket::disconnected, this, &URClient::disconnected);
-        connect(socket, &QTcpSocket::readyRead, this, &URClient::readyRead);
-
-        connectBtn = new QPushButton("Connect", this);
-        connect(connectBtn, &QPushButton::clicked, this, &URClient::connectToServer);
-
-        moveBtn = new QPushButton("Move", this);
-        connect(moveBtn, &QPushButton::clicked, this, &URClient::moveUR);
-
-        mainLayout = new QVBoxLayout(this);
-        mainLayout->addWidget(connectBtn);
-        mainLayout->addWidget(moveBtn);
-
-        setLayout(mainLayout);
-    }
-
-private slots:
-    void connectToServer() {
-        socket->connectToHost("192.168.1.54", 29999); // Change IP address and port as per your setup
-    }
-
-    void connected() {
-        qDebug() << "Connected to server";
-    }
-
-    void disconnected() {
-        qDebug() << "Disconnected from server";
-    }
-
-    void readyRead() {
-        qDebug() << "Received data from server: " << socket->readAll();
-    }
-
-    void moveUR() {
-        // Send movement command to the UR robot
-        QByteArray data = "movel(p[1.0, 2.0, 3.0, 0.0, 0.0, 0.0], a=1.2, v=0.1)\n";
-        socket->write(data);
-    }
-
-private:
-    QTcpSocket *socket;
-    QPushButton *connectBtn;
-    QPushButton *moveBtn;
-    QVBoxLayout *mainLayout;
-};
-
-int main(int argc, char *argv[]) {
-    QApplication app(argc, argv);
-
-    URClient client;
-    client.show();
-
-    return app.exec();
-}
-
-#include "main.moc"
-//>>>>>>> UR_connection
-*/
+ // return 0;
+//}

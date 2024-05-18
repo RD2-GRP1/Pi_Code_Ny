@@ -23,15 +23,17 @@ public:
     bool getOpen(){return !digitalRead(5);}
     void setup();
     auto getTid(){return mTid;}
+    int checkOpKnap();
+    int checkClKnap();
 
 private:
     int mSpeed;
-    const int mOut1 = 23;
-    const int mOut2 = 24;
+    const int mOut1 = 5;
+    const int mOut2 = 6;
 
     const int mPwm = 12;
-    const int mOpKnap = 5;
-    const int mClKnap = 6;
+    int mOpKnap = 23;
+    int mClKnap = 24;
     //const int mInKnap = 13;
     int mTid;
 };

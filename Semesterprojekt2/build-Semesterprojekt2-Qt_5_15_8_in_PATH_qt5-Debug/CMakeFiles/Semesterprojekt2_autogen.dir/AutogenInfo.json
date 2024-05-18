@@ -112,6 +112,12 @@
 			null
 		],
 		[
+			"/home/pi/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/UR5.h",
+			"Mu",
+			"EWIEGA46WW/moc_UR5.cpp",
+			null
+		],
+		[
 			"/home/pi/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/database.h",
 			"Mu",
 			"EWIEGA46WW/moc_database.cpp",
@@ -191,6 +197,11 @@
 	[
 		[
 			"/home/pi/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/UR.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/pi/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/UR5.cpp",
 			"Mu",
 			null
 		],
