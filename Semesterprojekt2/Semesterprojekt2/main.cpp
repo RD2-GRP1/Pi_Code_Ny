@@ -40,8 +40,7 @@ int main(int argc, char *argv[])
 
     int run = 1;
     while(1) {
-    std::cout << "Åben Knap: " << digitalRead(knap1) << std::endl;
-    std::cout << "Luk Knap: " << digitalRead(knap2) << std::endl;
+    std::cout << "Main: " << std::endl;
     delay(200);
 
         if(m.checkClKnap()) {

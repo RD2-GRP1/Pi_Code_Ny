@@ -23,17 +23,18 @@ void UR5::newConnection(){
     QTcpSocket *socket = server->nextPendingConnection();
     
     socket->write("ned");
-
+    std::cout << "Robot Ned: " << std::endl;
     socket->flush();
 
     while(1){
-    delay(100);
-    if(mk.checkClKnap()){
-	delay(2000);
-    socket->write("op");
-    socket->flush();
-    std::cout << "foelgende kommando er sendt: op" << std::endl;
-    break;
-      }
+        std::cout << "Robot Check: " << std::endl;
+        delay(100);
+        if(mk.checkClKnap()){
+            delay(2000);
+            std::cout << "Robot Op: " << std::endl;
+            socket->write("op");
+            socket->flush();
+            break;
+        }
     }
 }

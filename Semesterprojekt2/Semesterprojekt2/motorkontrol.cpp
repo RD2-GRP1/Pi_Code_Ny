@@ -35,6 +35,7 @@ void motorkontrol::openGripper() {
     pwmWrite (mPwm, mSpeed);
 
     while(1){
+        std::cout << "Closed: " << std::endl;
         if(digitalRead(mOpKnap)){
             pwmWrite (mPwm, 0);
             digitalWrite(mOut1,LOW);
@@ -49,18 +50,18 @@ void motorkontrol::closeGripper() {
     digitalWrite(mOut1,LOW);
     digitalWrite(mOut2,HIGH);
 
-    delay(1000);
 
     pinMode (mPwm, PWM_OUTPUT);
     pwmSetMode(PWM_MODE_MS);
     pwmSetClock (3840);
     pwmSetRange (2500);
-    delay(10);
+    delay(1000);
     auto start = std::chrono::high_resolution_clock::now();
     auto deadline = start + std::chrono::seconds(15);
     pwmWrite (mPwm, mSpeed);
 
     while(1){
+        std::cout << "Open: " << std::endl;
         if(digitalRead(mClKnap)){
             delay(2000);
             pwmWrite (mPwm, 0);
@@ -84,9 +85,11 @@ void motorkontrol::setSpeed(int speed){
 
 
 int motorkontrol::checkClKnap() {
+    std::cout << "Check Closed: " << std::endl;
     return digitalRead(mClKnap);
 }
 
 int motorkontrol::checkOpKnap() {
+    std::cout << "Check Open: " << std::endl;
     return digitalRead(mOpKnap);
 }
