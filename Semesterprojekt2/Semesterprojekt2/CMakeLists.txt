@@ -19,7 +19,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 #include_directories(${UR_RTDE_INCLUDE_DIR})
 #include_directories(${UR_RTDE_LIBRARY})
 
-add_executable(Semesterprojekt2 main.cpp database.cpp database.h motorkontrol.h motorkontrol.cpp UR.h UR.cpp UR5.h UR5.cpp)
+add_executable(Semesterprojekt2 main.cpp database.cpp database.h motorkontrol.h motorkontrol.cpp UR5.h UR5.cpp)
 
 link_directories("/usr/lib")
 

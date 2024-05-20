@@ -9,7 +9,6 @@
 #include "motorkontrol.h"
 #include "database.h"
 #include <string>
-#include "UR.h"
 #include <vector>
 #include "UR5.h"
 
@@ -21,49 +20,43 @@ void testThread(int argc, char *argv[]){
 
 int main(int argc, char *argv[])
 {
-    //UR5 server;
-   //server.newConnection();
     int test = 0;
     database d;
 
     std::thread t = std::thread(testThread, std::ref(test), argv);
     motorkontrol m;
     wiringPiSetupGpio();
-    //set input og en
     m.setSpeed(2500);
     int knap1 = 23; //Open knap
     int knap2 = 24; //luk knap
     pinMode(knap1, INPUT);
     pinMode(knap2, INPUT);
 
-    delay(6000);
+    //delay for at robottten kan nå at køre ned først
+    delay(3000);
     //Vi starter med at lukke griperen i programmet
     m.closeGripper();
-    d.setKnap1(digitalRead(knap2));
+    d.setKnap1(1);
 
-int run = 1;
+    int run = 1;
     while(1) {
     std::cout << "Åben Knap: " << digitalRead(knap1) << std::endl;
     std::cout << "Luk Knap: " << digitalRead(knap2) << std::endl;
-
-
-        delay(200);
+    delay(200);
 
         if(m.checkClKnap()) {
-            d.setKnap2(digitalRead(knap2));
+            d.setKnap2(1);
             m.openGripper();
-	    
-            d.setTime(m.getTid());
-if(run) {            
-d.insertRow();
-run = 0;
-}
-
             std::cout << "Der åbnes nu" << std::endl;
-        } else if(m.checkOpKnap()) {
-            d.setKnap1(digitalRead(knap1));
-            m.closeGripper();
+            d.setTime(m.getTid());
+            if(run) {
+            d.insertRow();
+            run = 0;
+            }
 
+        } else if(m.checkOpKnap()) {
+            d.setKnap1(1);
+            m.closeGripper();
             std::cout << "Der gribes nu" << std::endl;
         }
     }

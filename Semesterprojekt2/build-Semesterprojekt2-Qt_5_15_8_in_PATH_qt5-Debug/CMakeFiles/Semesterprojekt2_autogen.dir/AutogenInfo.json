@@ -106,12 +106,6 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/pi/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/UR.h",
-			"Mu",
-			"EWIEGA46WW/moc_UR.cpp",
-			null
-		],
-		[
 			"/home/pi/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/UR5.h",
 			"Mu",
 			"EWIEGA46WW/moc_UR5.cpp",
@@ -195,11 +189,6 @@
 	"SETTINGS_FILE" : "/home/pi/Pi_Code_Ny/Semesterprojekt2/build-Semesterprojekt2-Qt_5_15_8_in_PATH_qt5-Debug/CMakeFiles/Semesterprojekt2_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"/home/pi/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/UR.cpp",
-			"Mu",
-			null
-		],
 		[
 			"/home/pi/Pi_Code_Ny/Semesterprojekt2/Semesterprojekt2/UR5.cpp",
 			"Mu",

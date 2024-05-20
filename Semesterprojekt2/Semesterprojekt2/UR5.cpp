@@ -36,14 +36,4 @@ void UR5::newConnection(){
     break;
       }
     }
-
-   /* int i = 0;
-    while(i <= 500) {
-    delay(100);
-        QByteArray date = socket->readAll();
-    qDebug() << date;
-    ++i; */
-   // }
-    //socket->waitForBytesWritten(3000);
-    //socket->close();
 }

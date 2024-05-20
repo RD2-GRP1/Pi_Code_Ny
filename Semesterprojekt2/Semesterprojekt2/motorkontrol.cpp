@@ -13,7 +13,6 @@ motorkontrol::motorkontrol()
     pinMode(mPwm, OUTPUT);
     pinMode(mOpKnap, INPUT);
     pinMode(mClKnap, INPUT);
-    //pinMode(mInKnap, INPUT);
 
     digitalWrite(mOut1,LOW);
     digitalWrite(mOut2,LOW);
@@ -79,37 +78,10 @@ void motorkontrol::closeGripper() {
 }
 
 
-void motorkontrol::setup() {
-    if(!digitalRead(mOpKnap)) {
-        digitalWrite(mOut1,LOW);
-        digitalWrite(mOut2,LOW);
-
-        pinMode (mPwm, PWM_OUTPUT);
-        pwmSetMode(PWM_MODE_MS);
-        pwmSetClock (3840);
-        pwmSetRange (mSpeed);
-
-        delay (10);
-        while(digitalRead(mOpKnap)) {
-            digitalWrite(mOut1,HIGH);
-            pwmWrite (mPwm, mSpeed/2);
-        }
-        digitalWrite(mOut1,LOW);
-        pwmWrite (mPwm, 0);
-        digitalWrite(mPwm,LOW);
-    }
-}
-
-
 void motorkontrol::setSpeed(int speed){
     mSpeed = speed;
 }
 
-bool motorkontrol::getClose(){
-    bool in1 = !digitalRead(6);
-    std::cout << in1 << std::endl;
-    return in1;
-}
 
 int motorkontrol::checkClKnap() {
     return digitalRead(mClKnap);

@@ -4,8 +4,6 @@ file(REMOVE_RECURSE
   "Semesterprojekt2_autogen"
   "CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o.d"
-  "CMakeFiles/Semesterprojekt2.dir/UR.cpp.o"
-  "CMakeFiles/Semesterprojekt2.dir/UR.cpp.o.d"
   "CMakeFiles/Semesterprojekt2.dir/UR5.cpp.o"
   "CMakeFiles/Semesterprojekt2.dir/UR5.cpp.o.d"
   "CMakeFiles/Semesterprojekt2.dir/database.cpp.o"
