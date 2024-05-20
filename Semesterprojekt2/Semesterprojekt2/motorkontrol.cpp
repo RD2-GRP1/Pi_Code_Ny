@@ -57,8 +57,8 @@ void motorkontrol::closeGripper() {
     pwmSetClock (3840);
     pwmSetRange (2500);
     delay(10);
-   // auto start = std::chrono::high_resolution_clock::now();
-    //auto deadline = start + std::chrono::seconds(15);
+    auto start = std::chrono::high_resolution_clock::now();
+    auto deadline = start + std::chrono::seconds(15);
     pwmWrite (mPwm, mSpeed);
 
     while(1){
@@ -66,12 +66,12 @@ void motorkontrol::closeGripper() {
             delay(2000);
             pwmWrite (mPwm, 0);
             digitalWrite(mOut2,LOW);
-     //       auto stop = std::chrono::high_resolution_clock::now();
-        //    if (deadline<=stop) {
-          //      mTid = std::chrono::duration_cast<std::chrono::milliseconds>(deadline-start).count();
-           // } else {
-            //    mTid = std::chrono::duration_cast<std::chrono::milliseconds>(stop-start).count();
-            //}
+            auto stop = std::chrono::high_resolution_clock::now();
+           if (deadline<=stop) {
+               mTid = std::chrono::duration_cast<std::chrono::milliseconds>(deadline-start).count();
+            } else {
+               mTid = std::chrono::duration_cast<std::chrono::milliseconds>(stop-start).count();
+            }
             return;
         }
         delay(50);

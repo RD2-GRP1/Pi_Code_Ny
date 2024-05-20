@@ -17,10 +17,10 @@ database::database(){
 }
 
 //Den tabel som vores program benytter
-//"gripperData(ID INTEGER PRIMARY KEY AUTOINCREMENT, knap1 INTEGER, knap2 INTEGER, tid INTEGER, succes INTEGER)"
+//"CREATE TABLE gripperData(ID INTEGER PRIMARY KEY AUTOINCREMENT, knap1 INTEGER, knap2 INTEGER, tid INTEGER, succes INTEGER)"
 // query.prepare("INSERT into gripperData(knap1,knap2,tid,succes) VALUES (1,1,5,1)");
 
-
+/*
 int database::getMaxID(){
     QSqlQuery query;
     query.prepare("SELECT MAX(ID) FROM gripperData;");
@@ -28,7 +28,7 @@ int database::getMaxID(){
         mID = query.value(0).toInt();
     }
     return mID;
-}
+}*/
 
 void database::insertRow(){
     QSqlQuery query;
@@ -47,8 +47,10 @@ void database::setKnap1(bool opdaterK1){
 QSqlQuery query;
     if(opdaterK1){
         mKnap1 = 1;
+    std::cout << "opdateret true knap1" << std::endl;
     } else{
         mKnap1 = 0;
+    std::cout << "opdateret flase knap1" << std::endl;
     }
 }
 
@@ -56,20 +58,25 @@ void database::setKnap2(bool opdaterK2){
     QSqlQuery query;
     if(opdaterK2) {
         mKnap2 = 1;
+        std::cout << "opdtaret true knap2" << std::endl;
     } else{
         mKnap2 = 0;
+        std::cout << "opdateret false knap2" << std::endl;
     }
 
     //husk at kør setKnap1 først
     if (mKnap2 && mKnap1){
         mSucces = 1;
+        std::cout << "opdateret true ved succes" << std::endl;
     } else {
         mSucces = 0;
+        std::cout << "opdateret false ved succes" << std::endl;
      }
 }
 
 void database::setTime(int tid){
     mTid = tid;
+   std::cout << "tiden er sat" << std::endl;
 }
 
 

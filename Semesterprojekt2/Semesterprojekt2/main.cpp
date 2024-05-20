@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
     motorkontrol m;
     wiringPiSetupGpio();
     //set input og en
-    m.setSpeed(1400);
+    m.setSpeed(2500);
     int knap1 = 23; //Open knap
     int knap2 = 24; //luk knap
     pinMode(knap1, INPUT);
@@ -39,25 +39,31 @@ int main(int argc, char *argv[])
     delay(6000);
     //Vi starter med at lukke griperen i programmet
     m.closeGripper();
-    d.setKnap1(digitalRead(knap1));
+    d.setKnap1(digitalRead(knap2));
 
-
+int run = 1;
     while(1) {
     std::cout << "Åben Knap: " << digitalRead(knap1) << std::endl;
     std::cout << "Luk Knap: " << digitalRead(knap2) << std::endl;
-    std::cout << "thread: " << test << std::endl;
+
 
         delay(200);
 
         if(m.checkClKnap()) {
-            m.openGripper();
-            delay(2000);
             d.setKnap2(digitalRead(knap2));
-
+            m.openGripper();
+	    
+            d.setTime(m.getTid());
+if(run) {            
+d.insertRow();
+run = 0;
+}
 
             std::cout << "Der åbnes nu" << std::endl;
         } else if(m.checkOpKnap()) {
+            d.setKnap1(digitalRead(knap1));
             m.closeGripper();
+
             std::cout << "Der gribes nu" << std::endl;
         }
     }
