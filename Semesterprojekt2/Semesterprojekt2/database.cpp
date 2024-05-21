@@ -22,7 +22,6 @@ void database::insertRow(){
     QSqlQuery query;
     query.prepare("INSERT into gripperData(knap1, knap2, tid, succes) VALUES (:knap1, :knap2, :tid, :succes)");
 
-    query.bindValue(":ID", 0);
     query.bindValue(":knap1", mKnap1);
     query.bindValue(":knap2", mKnap2);
     query.bindValue(":tid", mTid);
