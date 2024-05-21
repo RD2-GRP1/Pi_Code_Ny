@@ -57,7 +57,7 @@ void motorkontrol::closeGripper() {
     pwmSetRange (2500);
     delay(1000);
     auto start = std::chrono::high_resolution_clock::now();
-    auto deadline = start + std::chrono::seconds(15);
+    auto deadline = start + std::chrono::seconds(8);
     pwmWrite (mPwm, mSpeed);
 
     while(1){

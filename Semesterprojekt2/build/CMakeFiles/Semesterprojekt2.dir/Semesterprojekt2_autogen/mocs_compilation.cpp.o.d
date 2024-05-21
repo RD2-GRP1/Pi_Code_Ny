@@ -1,7 +1,7 @@
 CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o: \
  /home/pi/Pi_Code_Ny/Semesterprojekt2/build/Semesterprojekt2_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Pi_Code_Ny/Semesterprojekt2/build/Semesterprojekt2_autogen/EWIEGA46WW/moc_UR.cpp \
+ /home/pi/Pi_Code_Ny/Semesterprojekt2/build/Semesterprojekt2_autogen/EWIEGA46WW/moc_UR5.cpp \
  /usr/include/c++/12/memory /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/os_defines.h \
@@ -114,11 +114,11 @@ CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o:
  /usr/include/c++/12/backward/auto_ptr.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
- /home/pi/Pi_Code_Ny/Semesterprojekt2/build/Semesterprojekt2_autogen/EWIEGA46WW/../../../Semesterprojekt2/UR.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QtWidgets \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QtWidgetsDepends \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QtCore \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QtCoreDepends \
+ /home/pi/Pi_Code_Ny/Semesterprojekt2/build/Semesterprojekt2_autogen/EWIEGA46WW/../../../Semesterprojekt2/UR5.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
  /usr/include/c++/12/cstddef /usr/include/c++/12/utility \
  /usr/include/c++/12/bits/stl_relops.h \
@@ -144,7 +144,6 @@ CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o:
  /usr/include/c++/12/bits/std_abs.h \
  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
@@ -156,10 +155,6 @@ CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o:
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qabstractanimation.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
@@ -248,6 +243,13 @@ CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o:
  /usr/include/c++/12/chrono /usr/include/c++/12/bits/chrono.h \
  /usr/include/c++/12/ratio /usr/include/c++/12/limits \
  /usr/include/c++/12/ctime /usr/include/c++/12/bits/parse_numbers.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QtNetwork \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QtNetworkDepends \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QtCore \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QtCoreDepends \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qabstractanimation.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qabstracteventdispatcher.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qeventloop.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
@@ -339,7 +341,6 @@ CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o:
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qfileinfo.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qfileselector.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QStringList \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qfilesystemwatcher.h \
@@ -524,399 +525,22 @@ CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o:
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qwineventnotifier.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qxmlstream.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcoreversion.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QtGui \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QtGuiDepends \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtguiglobal.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtgui-config.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qabstracttextdocumentlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtguiglobal.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qcolor.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qrgb.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qrgba64.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qevent.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qwindowdefs.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qregion.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qkeysequence.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qvector2d.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtouchdevice.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextformat.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qfont.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpen.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qbrush.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qmatrix.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpolygon.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qline.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtransform.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qimage.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpaintdevice.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpixelformat.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpixmap.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextoption.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qglyphrun.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qrawfont.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qfontdatabase.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextcursor.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextdocument.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpalette.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qaccessible.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qaccessiblebridge.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qfactoryinterface.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qaccessibleobject.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qaccessible.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qaccessibleplugin.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qbackingstore.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qwindow.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QEvent \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QMargins \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QRect \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qsurface.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qsurfaceformat.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qicon.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qcursor.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qbitmap.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qbrush.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qclipboard.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qcolor.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qcolorspace.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qcolortransform.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qcolortransform.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qcursor.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qdesktopservices.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qstandardpaths.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qdrag.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qevent.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qfont.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qfontdatabase.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qfontinfo.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qfontmetrics.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qgenericmatrix.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qgenericplugin.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qgenericpluginfactory.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qglyphrun.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qguiapplication.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qinputmethod.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qicon.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qiconengine.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qiconengineplugin.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qimage.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qimageiohandler.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qimagereader.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qimageiohandler.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qimagewriter.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qinputmethod.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qkeysequence.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qmatrix.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qmatrix4x4.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qvector3d.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qvector4d.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qquaternion.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qgenericmatrix.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qmovie.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qimagereader.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qoffscreensurface.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopengl.h /usr/include/GL/gl.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglext.h \
- /usr/include/inttypes.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglbuffer.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopengl.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglcontext.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QScopedPointer \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QSurfaceFormat \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qsurfaceformat.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopengldebug.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglcontext.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglextrafunctions.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglfunctions.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglframebufferobject.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglfunctions.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglpaintdevice.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglpixeltransferoptions.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglshaderprogram.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qmatrix4x4.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopengltexture.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopengltextureblitter.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QMatrix3x3 \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QMatrix4x4 \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopengltimerquery.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglvertexarrayobject.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglwindow.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QPaintDeviceWindow \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpaintdevicewindow.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QWindow \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qwindow.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QPaintDevice \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpaintdevice.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QOpenGLContext \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QImage \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpagedpaintdevice.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpagelayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpagesize.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpagelayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpagesize.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpaintengine.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpainter.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qfontinfo.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qfontmetrics.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpainter.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpainterpath.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpalette.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpdfwriter.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpagedpaintdevice.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpen.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpicture.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpictureformatplugin.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpixelformat.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpixmap.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpixmapcache.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpolygon.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qquaternion.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qrasterwindow.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qrawfont.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qregion.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qrgb.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qrgba64.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qscreen.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QList \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QSize \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QSizeF \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QTransform \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtransform.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qsessionmanager.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qstandarditemmodel.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qstatictext.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qstylehints.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qsurface.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qsyntaxhighlighter.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextobject.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextcursor.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextdocument.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextdocumentfragment.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextdocumentwriter.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextformat.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextlist.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextobject.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextoption.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtexttable.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtouchdevice.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qvalidator.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qvector2d.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qvector3d.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qvector4d.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qwindowdefs.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qtguiversion.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qvalidator.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qslider.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstyle.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtabbar.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qrubberband.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qframe.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qitemselectionmodel.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qaccessiblewidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qaccessibleobject.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qaction.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qactiongroup.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qaction.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qactiongroup.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qapplication.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qguiapplication.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qbuttongroup.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qcalendarwidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qcheckbox.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qcolordialog.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdialog.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qcolormap.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qcolumnview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qcombobox.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qcommandlinkbutton.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qcommonstyle.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qcompleter.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdatawidgetmapper.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdatetimeedit.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qcalendar.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdial.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdialog.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdialogbuttonbox.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdirmodel.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qfileiconprovider.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdockwidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdrawutil.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qerrormessage.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qfiledialog.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qfileiconprovider.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qfilesystemmodel.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qdiriterator.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qfocusframe.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qfontcombobox.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qcombobox.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qfontdialog.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qformlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QLayout \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qframe.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgesture.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgesturerecognizer.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicsanchorlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qpainterpath.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicslayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicslayoutitem.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicseffect.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicsgridlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicsitemanimation.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicslayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicslayoutitem.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicslinearlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicsproxywidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicswidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicssceneevent.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicstransform.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/QVector3D \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicsview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qscrollarea.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgraphicswidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgroupbox.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qheaderview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qinputdialog.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlineedit.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qitemdelegate.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qitemeditorfactory.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qkeyeventtransition.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qeventtransition.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qkeysequenceedit.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlabel.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlcdnumber.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlineedit.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlistview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlistwidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlistview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmdiarea.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmdisubwindow.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmenu.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmenubar.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmenu.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmessagebox.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmouseeventtransition.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qopenglwidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QWidget \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qplaintextedit.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtextedit.h \
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qabstracttextdocumentlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qprogressbar.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qprogressdialog.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qproxystyle.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QCommonStyle \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qradiobutton.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qrubberband.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qscrollarea.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qscrollbar.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qscroller.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QPointF \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QScrollerProperties \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qscrollerproperties.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaType \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QVariant \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qshortcut.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qsizegrip.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qslider.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qspinbox.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qsplashscreen.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qsplitter.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstackedlayout.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstackedwidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstatusbar.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstyle.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstyleditemdelegate.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstylefactory.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstylepainter.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstyleplugin.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qsystemtrayicon.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtabbar.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtableview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtablewidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtableview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtextbrowser.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtextedit.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtoolbar.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtoolbox.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtoolbutton.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtooltip.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtreeview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtreewidget.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtreeview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtreewidgetitemiterator.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtreewidgetitemiterator.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qundogroup.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qundostack.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qundoview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qwhatsthis.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qwidgetaction.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qwizard.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtwidgetsversion.h \
- /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QTcpSocket \
- /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtcpsocket.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetwork-config.h \
- /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractsocket.h \
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QApplication \
- /home/pi/Pi_Code_Ny/Semesterprojekt2/build/Semesterprojekt2_autogen/EWIEGA46WW/moc_UR5.cpp \
- /home/pi/Pi_Code_Ny/Semesterprojekt2/build/Semesterprojekt2_autogen/EWIEGA46WW/../../../Semesterprojekt2/UR5.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
- /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QtNetwork \
- /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QtNetworkDepends \
- /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractnetworkcache.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkrequest.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QUrl \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractsocket.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qauthenticator.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qdnslookup.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qdtls.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslsocket.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtcpsocket.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractsocket.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslerror.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslcertificate.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qssl.h \
@@ -939,10 +563,12 @@ CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o:
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslconfiguration.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QSslPreSharedKeyAuthenticator \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslpresharedkeyauthenticator.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaType \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkconfigmanager.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkconfiguration.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkconfiguration.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkcookie.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QList \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkcookiejar.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkdatagram.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkdiskcache.h \
@@ -971,8 +597,10 @@ CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.o:
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslkey.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslsocket.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtcpserver.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtcpsocket.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qudpsocket.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetworkversion.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QTcpSocket \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QTcpServer \
  /usr/include/c++/12/iostream /usr/include/c++/12/ostream \

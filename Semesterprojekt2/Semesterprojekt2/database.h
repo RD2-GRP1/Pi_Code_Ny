@@ -24,6 +24,7 @@ private:
     int mKnap2;
     int mSucces;
     int mTid;
+    QSqlDatabase db;
 };
 
 #endif // DATABASE_H

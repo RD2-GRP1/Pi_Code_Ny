@@ -211,30 +211,6 @@ Semesterprojekt2_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/Semesterprojekt2_autogen/mocs_compilation.cpp.s
 .PHONY : Semesterprojekt2_autogen/mocs_compilation.cpp.s
 
-UR.o: UR.cpp.o
-.PHONY : UR.o
-
-# target to build an object file
-UR.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/UR.cpp.o
-.PHONY : UR.cpp.o
-
-UR.i: UR.cpp.i
-.PHONY : UR.i
-
-# target to preprocess a source file
-UR.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/UR.cpp.i
-.PHONY : UR.cpp.i
-
-UR.s: UR.cpp.s
-.PHONY : UR.s
-
-# target to generate assembly for a file
-UR.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semesterprojekt2.dir/build.make CMakeFiles/Semesterprojekt2.dir/UR.cpp.s
-.PHONY : UR.cpp.s
-
 UR5.o: UR5.cpp.o
 .PHONY : UR5.o
 
@@ -348,9 +324,6 @@ help:
 	@echo "... Semesterprojekt2_autogen/mocs_compilation.o"
 	@echo "... Semesterprojekt2_autogen/mocs_compilation.i"
 	@echo "... Semesterprojekt2_autogen/mocs_compilation.s"
-	@echo "... UR.o"
-	@echo "... UR.i"
-	@echo "... UR.s"
 	@echo "... UR5.o"
 	@echo "... UR5.i"
 	@echo "... UR5.s"

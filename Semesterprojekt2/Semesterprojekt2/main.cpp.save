@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     std::thread t = std::thread(testThread, std::ref(test), argv);
     motorkontrol m;
     wiringPiSetupGpio();
-    m.setSpeed(2000);
+    m.setSpeed(2500);
     int knap1 = 23; //Open knap
     int knap2 = 24; //luk knap
     pinMode(knap1, INPUT);
@@ -49,9 +49,6 @@ int main(int argc, char *argv[])
             std::cout << "Der åbnes nu" << std::endl;
             d.setTime(m.getTid());
             if(run) {
-	    if(m.getTid() >= 8000) {
-	    d.setKnap2(0);
-	    }
             d.insertRow();
             run = 0;
             }
@@ -62,7 +59,7 @@ int main(int argc, char *argv[])
             std::cout << "Der gribes nu" << std::endl;
         }
     }
-    t.~thread();
+   t.~thread();
     return 0;
 }
 
